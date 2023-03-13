@@ -1,0 +1,126 @@
+<style>
+    .text-field{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    appearance: none;
+    border-radius: 4px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    :focus{
+        color: #212529;
+        background-color: #fff;
+        border-color: #86b7fe;
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    }
+    
+    }
+    
+</style>
+
+
+
+<form method="post" enctype="multipart/form-data" name="form2">
+    {% csrf_token %}
+    <!-- 2 column grid layout with text inputs for the first and last names -->
+    <div class="row">
+      <div class="col-12 col-md-6 mb-4">
+        <div class="form-outline">
+          <input type="text" id="form6Example1" placeholder="Firstname" name="firstname" class="form-control text-field" />
+        </div>
+      </div>
+      <div class="col-12 col-md-6 mb-4">
+        <div class="form-outline">
+          <input type="text" id="form6Example2" name="lastname"  placeholder="Last name" class="form-control text-field" />
+          <label class="form-label" for="form6Example2"></label>
+        </div>
+      </div>
+    </div>
+
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <input type="email" id="form6Example3" name="registeremail" placeholder="Email" class="form-control text-field" />
+    </div>
+<br>
+    <!-- Text input -->
+    <div class="form-outline mb-4">
+      <input type="number" id="form6Example4" name="registerphono" placeholder="Mobile Number" class="form-control text-field" />
+    </div>
+<br>
+    <!-- Email input -->
+    <div class="form-outline mb-4">
+      <input type="text" id="form6Example5" name='question' placeholder="My question is regarding" class="form-control text-field" />
+    </div>
+<br>
+    <!-- Number input -->
+    <style>
+        .select {
+            width: 100%;
+            font-weight: 100;
+            min-width: 15ch;
+            max-width: 100%%;
+            border: 1px solid var(--select-border);
+            border-radius: 0.25em;
+            padding: 0.25em 0.5em;
+            font-size: 1.05rem;
+            cursor: pointer;
+            line-height: 1.1;
+            background-color: #fff;
+            background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+          }
+    </style>
+    <div class="form-outline mb-4">
+        <div class="default-select "  id="default-select">
+            <select class="select" id="prestudy" name="prestudy">
+                <option value=" none">Preffered Study</option>
+                <option value="Australia">Australia</option>
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Canada">Canada</option>
+                <option value="USA">USA</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Germany">Germany</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Help Me Decide">Help Me Decide</option>
+            </select>
+        </div>
+    </div>
+<br>
+    <!-- Message input -->
+    <div class="form-outline mb-4">
+        <div class="default-select "  id="default-select">
+            <select class="select" id="studyyear" name="studyyear">
+                <option value=" 1">Preffered Study Year</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+            </select>
+        </div>
+    </div>
+<br>
+    <div class="form-outline mb-4">
+        <div class="default-select " id="default-select">
+            <select class="select" id="studyintake" name="studyintake">
+                <option value=" None">Preffered Study Intake</option>
+                <option value="Q1 (Jan - Mar)">Q1 (Jan - Mar)</option>
+                <option value="Q2 (Apr - Jun)">Q2 (Apr - Jun)</option>
+                <option value="Q3 (Jun - Sep)">Q3 (Jun - Sep)</option>
+                <option value="Q4 (Oct - Dec)">Q4 (Oct - Dec)</option>
+                <option value="Not Yet Decided">Not Yet Decided</option>
+            </select>
+        </div>
+    </div>
+<br>
+    <div class="form-outline mb-4">
+      <textarea type="text" placeholder="Message" name="mainmessage" class="form-control text-field" id="form6Example7" rows="4"></textarea>
+    </div>
+
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-secondary btn-rounded btn-block">Submit</button>
+  </form>

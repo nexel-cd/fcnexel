@@ -1,0 +1,413 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+background: #F9F9F9;
+padding: 25px;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#contact h3 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 10px;
+}
+
+#contact h4 {
+margin: 5px 0 15px;
+display: block;
+font-size: 13px;
+font-weight: 400;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+-webkit-transition: border-color 0.3s ease-in-out;
+-moz-transition: border-color 0.3s ease-in-out;
+transition: border-color 0.3s ease-in-out;
+border: 1px solid #aaa;
+}
+
+#contact textarea {
+height: 100px;
+max-width: 100%;
+resize: none;
+}
+
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #E449AD;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+border-radius: 20px;
+}
+
+#contact button[type="submit"]:hover {
+background: #bf2e8c;
+-webkit-transition: background 0.3s ease-in-out;
+-moz-transition: background 0.3s ease-in-out;
+transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+outline: 0;
+border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+color: #888;
+}
+
+:-moz-placeholder {
+color: #888;
+}
+
+::-moz-placeholder {
+color: #888;
+}
+
+:-ms-input-placeholder {
+color: #888;
+}
+</style>
+	
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/bg_2.jpg' %}');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center">
+					<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span><a>Test Prep <i class="fa fa-chevron-right"></i></a></span> <span>PTE<i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">PTE Exam Overview</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container" style="max-width: 1400px;">
+      <div class="row">
+        <div class="col-lg-8 ftco-animate py-md-5 mt-md-5">
+          <img src="https://i.ibb.co/5KXYdgC/image-removebg-preview-41.png" alt="" style="max-width: 320px;"/>
+                <h2 style="font-weight: 600; margin-top: 50px;">PTE Overview</h2>
+                <p>PTE Full Form - Pearson Tests of English</p><hr>
+                <h2 style="font-weight: 600; margin-top: 50px;">What is the PTE exam?</h2>
+				<p style="justify-content: center; font-weight: 3300;">PTE Academic is an English language test for international study and immigration.</p>
+                <h5 style="font-weight: 600;">The PTE exam has two categories:</h5>
+                <ol>
+                  <li>PTE Academic</li>
+                  <li>PTE Home</li>
+                </ol>
+        </div> 
+        <div class="col-lg-4 ftco-animate py-md-5 mt-md-5">
+          <div class="container" id="sampleregistration">  
+            {% include 'registerform.html' %}
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="">
+          
+        <section class="container" style="max-width: 1000px">
+          <style>
+            
+            .video-container {
+              position: relative;
+              width: 100%;
+              height: 0;
+              padding-bottom: 56.25%; /* 16:9 aspect ratio */
+              overflow: hidden;
+            }
+            
+            .video-container video {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 50px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            
+            .video-container .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              {% comment %} background-color: rgba(0, 0, 0, 0.4); {% endcomment %}
+            }
+            
+            .video-container .play-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 80px;
+              height: 80px;
+              background-color: rgba(0, 0, 0, 0.4);
+              border: none;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+            }
+            .video-container .play-button.hidden {
+              display: none;
+            }
+            
+            .video-container .play-button::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 20px 0 20px 40px;
+              border-color: transparent transparent transparent white;
+            }
+            
+            .video-container .play-button:hover {
+              transform: translate(-50%, -50%) scale(1.2);
+            }
+            
+            .video-container .text {
+              position: absolute;
+              bottom: 10%;
+              left: 50%;
+              transform: translateX(-50%);
+              color: white;
+              font-size: 24px;
+              font-weight: bold;
+              letter-spacing: 2px;
+              text-align: center;
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+            }
+            
+            .video-container:hover .play-button {
+              transform: translate(-50%, -50%) scale(1.5);
+            }
+            
+            .video-container:hover .text {
+              opacity: 1;
+            }
+            
+            
+          </style>
+          <div class="video-container">
+            <video src="{% static 'video/exams/pte.mp4' %}"  muted></video>
+            <div class="overlay"></div>
+            <div class="play-button"></div>
+          </div>
+          <script>
+        
+            const video = document.querySelector('video');
+            const playButton = document.querySelector('.play-button');
+            
+            playButton.addEventListener('click', function() {
+              if (video.paused) {
+                video.play();
+                playButton.classList.add('paused');
+              } else {
+                video.pause();
+                playButton.classList.remove('paused');
+              }
+            });
+            
+            video.addEventListener('click', function() {
+              if (video.paused) {
+                video.play();
+                playButton.classList.add('paused');
+              } else {
+                video.pause();
+                playButton.classList.remove('paused');
+              }
+            });
+            
+            video.addEventListener('ended', function() {
+              playButton.classList.remove('paused');
+            });
+            
+            video.addEventListener('play', function() {
+              playButton.classList.add('hidden');
+            });
+            
+            video.addEventListener('pause', function() {
+              playButton.classList.remove('hidden');
+            });
+            
+        
+          </script>
+        </section>
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">Why take the PTE Academic Exam?</h2>
+				<p style="justify-content: center; font-weight: 3300;">PTE Academic is a fully computerized, online English language test for international education and immigration purposes. This test is powered by AI technology and unlike the conventional grading system, the PTE grading is completely objective and free from human biases.</p>
+                
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">Types of PTE Exam</h2>
+				<p style="justify-content: center; font-weight: 3300;">There are two categories under the PTE Academic exam: </p>
+        <ul>
+          <li>PTE Academic Exam</li>
+          <li>PTE Academic UKVI</li>
+        </ul>
+                        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">PTE Academic Exam</h2>
+				<p style="justify-content: center; font-weight: 3300;"> PTEAcademic assesses the candidates' skills in speaking, listening, reading and writing. The entire duration of the test lasts up to 3 hours. This test is accepted by over a thousand universities around the globe, including Harvard Business School, INSEAD and Yale. In Australia and New Zealand, PTE Academic is accepted even for visa purposes.</p>
+                
+                <h2 style="font-weight: 600; margin-top: 50px;">PTE Academic UKVI</h2>
+				<p style="justify-content: center; font-weight: 3300;">The PTE Academic UKVI is specific to the UK. This is a Secure English Language Test (SELT) to be eligible for UK visas. Anyone who wishes to work, study or live in the UK can take up this test.</p>
+
+                
+                <h2 style="font-weight: 600; margin-top: 50px;">PTE Academic Exam Highlights</h2>
+                <section class="container" style=" max-width: 1200px;">
+                    <table class="table table-striped" style="margin: auto; text-align: center;">
+                        <thead>
+                            <tr class="table-primary">
+                              <th scope="col">Exam Name</th>
+                              <th scope="col">PTE Exam</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">PTE Full Form</th>
+                            <td >Pearson Test of English
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Types of PTE Exam</th>
+                            <td>The PTE exam has two categories:<br>
+                              1. PTE Academic<br>
+                              2. PTE Home
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row"> What is the PTE exam for?</th>
+                            <td>Pearson Tests of English (PTE) Academic is an English language test for international study and immigration.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">In which countries is the PTE certification accepted?</th>
+                            <td>PTE is widely accepted in countries such as Australia, the USA, the UK, Ireland, Singapore, Canada, New Zealand, France, Germany, Spain and Italy.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">PTE Exam Format</th>
+                            <td> PTE Academic test format has three components:<br>
+                              Part 1: Speaking & Writing<br>
+                              Part 2: Reading<br>
+                              Part 3: Listening</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Who conducts PTE?</th>
+                            <td>The PTE exam is conducted by the Pearson VUE (Virtual User Environment).</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">What is the official website for PTE?</th>
+                            <td>https://pearsonpte.com/</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">How much does the PTE Exam Fee cost?</th>
+                            <td>The PTE exam fee is USD 170 + 15%tax and bank charge.</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">PTE Helpline</th>
+                            <td>0120-6679008</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                </section>
+
+                        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">How to Prepare for PTE?</h2>
+				<p style="justify-content: center; font-weight: 3300;">
+        <ul>
+          <li>There are two methods to prepare for the PTE: self-study and attending coaching programmes.</li><br>
+          <li>If money is an issue, self-study is a preferable alternative. However, keep in mind that in order to study independently, you must have access to the most up-to-date preparation suggestions for each portion of the PTE exam.</li><br>
+          <li>Coaching classes, on the other hand, are an excellent alternative if you don't have enough time and require expert supervision for test preparation. Your time will be better handled because attending lessons on a regular basis will become part of your habit.</li><br>
+
+          </ul>
+        </p>
+
+        <h2 style="font-weight: 600; margin-top: 50px; text-align: center;">Are You Planning to Take PTE Courses?<br>Contact Future Counselors, Meet Our Education Counselors. <br>Get FREE Education Counselling Today!</h2>
+            </div>
+                    <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                
+                            </div>
+            <div class="container " style="text-align: center">
+<a href="{% static 'pdf/TR.pdf' %}" class="popup-button" style="width:100%; background-color: #727FE9; color: white; " download>Checkout the Tips & Tricks for PTE</a>
+</div>
+<br>
+
+            </div>
+	</section>
+
+{% include "footer.html" %}
+{% endblock body %}

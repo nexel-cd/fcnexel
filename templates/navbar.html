@@ -1,0 +1,90 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'homepage' %}"><img src="{% static 'images\fc_logo.png' %}" alt="future counselor logo" height="50"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+    </button>
+ 
+    <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item "><a href="{% url 'homepage' %}" class="nav-link">Home</a></li>
+          <li  class="nav-item" >
+            <div class="dropdown nav-item">
+              <a
+                class="dropdown-toggle nav-link"
+                type="button"
+                id="dropdownMenuButton2"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false" 
+                style="padding-top: 22px;
+          color: white;"
+                >
+                About Us
+              </a>
+              <ul class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item " href="{% url 'companyprofile' %}">Company Profile</a></li>
+                <li><a class="dropdown-item " href="{% url 'visasuccess' %}">Visa Success</a></li>
+              </ul>
+            </div>
+          </li>          <li class="nav-item"><a href="{% url 'service' %}" class="nav-link">Services</a></li>
+          <li class="nav-item"><div class="dropdown nav-item">
+            <a
+              class="dropdown-toggle nav-link"
+              type="button"
+              id="dropdownMenuButton2"
+              data-mdb-toggle="dropdown"
+              aria-expanded="false" 
+              style="padding-top: 22px;
+        color: white;"
+              >
+              Destination
+            </a>
+            <ul class="dropdown-menu"
+              aria-labelledby="dropdownMenuButton2">
+              <li><a class="dropdown-item " href="{% url 'uk' %}">UK</a></li>
+              <li><a class="dropdown-item " href="{% url 'usa' %}">USA</a></li>
+              <li><a class="dropdown-item " href="{% url 'canada' %}">Canada</a></li>
+              <li><a class="dropdown-item " href="{% url 'australia' %}">Australia</a></li>
+              <li><a class="dropdown-item " href="{% url 'newzealand' %}">New Zealand</a></li>
+              <li><a class="dropdown-item " href="{% url 'ireland' %}">Ireland</a></li>
+              <li><a class="dropdown-item " href="{% url 'europe' %}">Europe</a></li>
+              <li><a class="dropdown-item " href="{% url 'france' %}">France</a></li>
+              <li><a class="dropdown-item " href="{% url 'germany' %}">Germany</a></li>
+              <li><a class="dropdown-item " href="{% url 'asia' %}">Asia</a></li>
+              <li><a class="dropdown-item " href="{% url 'africa' %}">Africa</a></li>
+
+            </ul>
+          </div>
+        </li>
+          <li  class="nav-item" >
+            <div class="dropdown nav-item">
+              <a
+                href="{% url 'testprep' %}"
+                class="dropdown-toggle nav-link"
+                type="button"
+                id="dropdownMenuButton2"
+                data-mdb-toggle="dropdown"
+                aria-expanded="false" 
+                style="padding-top: 22px;
+          color: white;"
+                >
+                Test Prep
+              </a>
+              <ul class="dropdown-menu"
+                aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item " href="{% url 'testprep_ielts' %}">IELTS</a></li>
+                <li><a class="dropdown-item " href="{% url 'testprep_gre' %}">GRE</a></li>
+                <li><a class="dropdown-item " href="{% url 'testprep_pte' %}">PTE</a></li>
+                <li><a class="dropdown-item " href="{% url 'testprep_toefl' %}">TOEFL</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item"><a href="{% url 'university' %}" class="nav-link">University</a></li>
+          <li class="nav-item"><a href="{%url 'blog'%}" class="nav-link">Blogs</a></li>
+          <li class="nav-item"><a href="{% url 'contactus' %}" class="nav-link">Contact Us</a></li>
+      </ul>
+  </div>
+ </div>
+ </nav>

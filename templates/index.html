@@ -1,0 +1,904 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+  <title>Future Counselors | Study Abroad Programs for Aspiring Counselors in India</title>
+	<meta name="description" content="Future Counselors offers study abroad programs for aspiring counselors in India. Explore our international study opportunities and gain the skills and experience you need to succeed in your counseling career.">
+	<meta name="keywords" content="study abroad, education overseas, counseling programs, international education, Future Counselors, India">
+	<link rel="canonical" href="https://futurecounselors.com/">
+	<meta name="robots" content="index,follow">
+	<meta name="geo.region" content="IN">
+	<meta name="geo.placename" content="India">
+	<meta name="geo.position" content="20.5937, 78.9629">
+	<meta name="ICBM" content="20.5937, 78.9629">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+<style>
+  #myVideo {
+  width: 98.9vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  }
+</style>
+
+
+<div class="hero-wrap js-fullheight ftco-animate" >
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+      <video autoplay muted loop id="myVideo">
+        <source src="{% static 'video/future counselor.mp4' %}" type="video/mp4">
+      </video>
+      <div class="col-md-7 ftco-animate">
+        <span class="subheading">Welcome to Future Counselors</span>
+        <h1 class="mb-4">We are one stop solution for your Study Abroad Dream</h1>
+        <p class="caps">Get the best guidance towards your bright careers abroad with our expert counselors</p>
+        <p class="mb-0"><a href="#about-btn" class="btn btn-primary">Learn More</a> <a href="#destinationcard" class="btn btn-white">Take me Aboard</a></p>
+    </div>
+</div>
+</div>
+</div>
+
+<section class="ftco-section ftco-animate" style="background-color: white;" id="about-btn">
+   <div class="container">
+      <div class="row justify-content-center pb-4">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">START LEARNING TODAY – EXPLORE MORE WITH US !!</span>
+            <h2 class="mb-4">With you at every step - Your one point solution towards your study abroad dreams</h2>
+        </div>
+    </div>
+    <div class="row justify-content-center ftco-animate">
+     <div class="col-md-3 col-lg-2">
+        <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl1.jpg' %});">
+           <div class="text w-100 text-center">
+              <h3>COUNSELLING</h3>  
+          </div>
+      </a>
+  </div>
+  <div class="col-md-3 col-lg-2">
+    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl2.jpg' %});">
+       <div class="text w-100 text-center">
+          <h3>SHORTLISITNG</h3>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-lg-2">
+    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl3.jpg' %});">
+       <div class="text w-100 text-center">
+          <h3 style="font-size: 15px">DOCUMENTATION</h3>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-lg-2">
+    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl4.jpg' %});">
+       <div class="text w-100 text-center">
+          <h3>APPLICATIONS & SELECTIONS</h3>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-lg-2">
+    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl5.jpg' %});">
+       <div class="text w-100 text-center">
+          <h3>VISA ASSISTANCE</h3>
+      </div>
+  </a>
+</div>
+<div class="col-md-3 col-lg-2">
+    <a href="#" class="course-category img d-flex align-items-center justify-content-center" style="background-image: url({% static 'images/sl6.jpg' %});">
+       <span class="text w-100 text-center">
+          <h3>ORIENTATION</h3>
+      </span>
+  </a>
+</div>
+<div class="col-md-12 text-center mt-5">
+    <a href="{% url 'service'  %}" class="btn btn-secondary">Learn More</a>
+</div>
+</div>
+</div>
+</section>
+
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta ftco-animate" style="
+  max-height: 930px ;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background: #000000;
+  background: #ce4be8;
+  background: -moz-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ce4be8), color-stop(100%, #207ce5));
+  background: -webkit-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+  background: -o-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+  background: -ms-linear-gradient(-45deg, #ce4be8 0%, #207ce5 100%);
+  background: -webkit-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
+  background: -o-linear-gradient(315deg, #ce4be8 0%, #207ce5 100%);
+  background: linear-gradient(135deg, #ce4be8 0%, #207ce5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce4be8', endColorstr='#207ce5', GradientType=1 );">
+    <div class="container" style="max-width: 1500px;">
+
+      <div class="row ftco-animate" >
+        <div class="col-lg-4 text-center">
+          <h1 style="font-size: 80px;  color: white; text-align: left;">WHY</h1>
+          <h1 class="font-weight-bold" style=" font-size: 172px; color: white; text-align: left; margin-top: -80px;">US?</h1>
+        </div>
+        <div class="col-lg-8 text-center text-lg-center align-middle mt-5" >
+          <p style="color: white; text-align: left; font-size: larger; ">"Experience the success of countless international students from diverse backgrounds just like you. With our proven track record of providing ethical, accurate, and friendly guidance for the past 11 years, we are confident in our ability to help you achieve your international education goals. Share your aspirations with us and let us guide you on the path to realizing them."</p>
+          <div class="container d-none d-md-block d-lg-block justify-content-between">
+            <img alt="" src="{% static '/images/main_1.png' %}" style="max-height: 190px;" />
+            <img alt="" src="{% static '/images/main_2.png' %}" style="max-height: 190px;" />
+            <img alt="" src="{% static '/images/main_3.png' %}" style="max-height: 190px;" />
+            <img alt="" src="{% static '/images/main_4.png' %}" style="max-height: 190px;" />
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+  </section>
+
+
+<section class="ftco-section bg-light ftco-animate" id="destinationcard">
+   <div class="container" style="max-width: 1300px;">
+      <div class="row justify-content-center pb-4">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<span class="subheading">Start your Journey today</span>
+            <h2 class="mb-4">PICK YOUR COUNTRY</h2>
+        </div>
+    </div>
+
+    <style>
+      .flip-card {
+        background-color: transparent;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+      
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        border-radius: 20px;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+        border-radius: 20px;
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        border-radius: 20px;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+        border-radius: 20px;
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: #e449ad;
+        color: white;
+        transform: rotateY(180deg);
+        border-radius: 20px;
+      }
+      .flip-card button{
+        color: white;
+        background-color: #ceb1ff;
+        border-radius: 50px;
+        margin-top: -20px;
+        border: #ceb1ff;
+        padding: 10px;
+      }
+        
+
+@keyframes arrow {
+ 0%,
+ 100% {
+  transform: translateX(0);
+ }
+ 50% {
+  transform: translateX(1rem);
+ }
+}
+
+        
+    </style>
+
+    <div class="card-deck ftco-animate" style="border-radius: 20px;">
+      <div class="card ftco-animate" style="border-radius: 20px; height: 300px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/10.png' %}" alt="Avatar" style="height: inherit; width: inherit;  border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Achieve your American dream by studying in the USA, the epicenter of top-ranked universities and innovative industries. Immerse yourself in the land of opportunity.</p>
+              <button data-pointing ><a href="{% url 'usa' %}">
+                Study in USA 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/9.png' %}" alt="Avatar" style="height: inherit; width: inherit;  border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Discover the perfect blend of modernity and tradition by studying in the United Kingdom. Home to some of the world's oldest and premier universities, the UK attracts thousands of international students each year.</p>
+              <button data-pointing><a  href="{% url 'uk' %}">
+                Study in UK 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/8.png' %}" alt="Avatar" style="height: inherit; width: inherit;  border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+             
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Experience diversity and open-mindedness at its core by studying in Canada. Thousands of international students flock to Canada each year. </p>
+              <button data-pointing><a  href="{% url 'canada' %}">
+                Study in Canada
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/6.png' %}" alt="Avatar" style="height: inherit; width: inherit;  border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Unlock the fusion of academic excellence and natural beauty by studying in Ireland, a rising destination for international education.</p>
+              <button data-pointing ><a href="{% url 'ireland' %}">
+                Study in IreLand
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-deck ftco-animate" style="border-radius: 20px; margin-top:30px;">
+      <div class="card ftco-animate" style="border-radius: 20px; height: 300px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/5.png' %}" alt="Avatar" style="height: inherit; width: inherit; border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Experience natural beauty and academic prestige by studying in New Zealand, where all 8 universities consistently rank in the top 500 worldwide. Immerse yourself in a well-rounded study abroad experience.</p>
+              <button data-pointing ><a href="{% url 'newzealand' %}">
+                Study in New Zealand
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/7.png' %}" alt="Avatar" style="height: inherit; width: inherit; border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Unlock innovation and advancement by studying in Australia, a diverse and dynamic country that expands your mind and readies you for success globally.</p>
+              <button data-pointing ><a href="{% url 'australia' %}">
+                Study in Australia 
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/2.png' %}" alt="Avatar" style="height: inherit; width: inherit; border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+             
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Achieve your European dream by studying in Europe, the birthplace of renowned universities and a melting pot of cultures. Immerse yourself in the land of diversity.</p>
+              <button ><a  href="{% url 'europe' %}">
+                Study in Europe
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card ftco-animate" style="border-radius: 20px;">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="{% static 'images/country card image/1.png' %}" alt="Avatar" style="height: inherit; width: inherit; border-radius: 20px;">
+            </div>
+            <div class="flip-card-back">
+              
+              <p style="text-align: left; padding: 10px; font-weight: 500;">Achieve your ASIAN dream by studying in ASIA, the birthplace of renowned universities and a melting pot of cultures. Immerse yourself in the land of diversity.</p>
+              <button ><a href="{% url 'asia' %}">
+                Study in ASIA
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                </svg></a>
+              </button>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ftco-section ftco-counter img ftco-animate" id="section-counter" style="background-image: url({% static 'images/bg_4.jpg' %});">
+  <div class="overlay"></div>
+  <div class="container">
+     <div class="row">
+        <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+          <div class="block-18 d-flex align-items-center">
+             <div class="icon"><span class="flaticon-online"></span></div>
+             <div class="text">
+              <strong class="number" data-number="80000">0</strong>
+              <span>Courses</span>
+          </div>
+      </div>
+  </div>
+  <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+      <div class="block-18 d-flex align-items-center">
+         <div class="icon"><span class="flaticon-graduated"></span></div>
+         <div class="text">
+          <strong class="number" data-number="5900">0</strong>
+          <span>Students Enrolled</span>
+      </div>
+  </div>
+ </div>
+ <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+  <div class="block-18 d-flex align-items-center">
+     <div class="icon"><span class="flaticon-instructor"></span></div>
+     <div class="text">
+      <strong class="number" data-number="32">0</strong>
+      <span>Diffrent Countries</span>
+  </div>
+ </div>
+ </div>
+ <div class="col-md-3 d-flex justify-content-center counter-wrap ftco-animate">
+  <div class="block-18 d-flex align-items-center">
+     <div class="icon"><span class="flaticon-tools"></span></div>
+     <div class="text">
+      <strong class="number" data-number="12">0</strong>
+      <span>Years of Counselling</span>
+  </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+<section class="ftco-section ftco-about img ftco-animate" style="background-color: white;">
+   <div class="container">
+      <div class="row d-flex">
+         <div class="col-md-12 about-intro">
+            <div class="row">
+               <div class="col-md-6 d-flex">
+                  <div class="d-flex about-wrap">
+                     <div class="img d-flex align-items-center justify-content-center" style="background-image:url({% static 'images/about-1.jpg' %});">
+                     </div>
+                     <div class="img-2 d-flex align-items-center justify-content-center" style="background-image:url({% static 'images/about.jpg' %});">
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-6 pl-md-5 py-5">
+              <div class="row justify-content-start pb-3">
+                  <div class="col-md-12 heading-section ftco-animate">
+                     <span class="subheading">GET STARTED NOW</span>
+                     <h2 class="mb-4">Learn Anything You Want Today</h2>
+                     <p>Future Counselors Is a one stop solution towards your study abroad dream, a premium Study abroad Consultancy in Nagpur, India. We are one of the best and leading abroad education consultants in India. We offer a wide range of services to students interested in studying abroad which includes, Counseling, Country and Course selection, application assistance, visa documentation, education loans, foreign exchange, pre-departure support etc. Our team of experts are dedicated to helping students find the right program and institution to match their goals and aspirations. With our assistance, students can take their education to the next level and gain valuable international experience.</p>
+                     <p><a href="{% url 'contactus' %}" class="btn btn-primary">Get in touch with us</a></p>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </div>
+</div>
+</div>
+</section>
+
+<section class="container-fluid" style="background-color: #4986FB;">
+  <br>
+  <div class="heading-section ftco-animate text-center">
+    <span class="subheading text-white">Testimonial</span>
+    <h2 class="mb-4  text-white">What Our Students Says</h2>
+  </div>
+  <div class="row">
+    <div class="col-md-6"> 
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <div class="col-lg-10 offset-lg-1 pt-5 pb-10 text-white ftco-animate">
+          <div id="client-testimonial-carousel" class="carousel slide" data-ride="carousel" style="height:420px;">
+            <div class="carousel-inner" role="listbox">
+              <div class="carousel-item active text-center p-4">
+                <blockquote class="blockquote text-center">
+                  <h5 class="mb-0  text-white"><i class="fa fa-quote-left"></i> Best Abroad Education Consultants in Nagpur. I have received tremendous support towards my study visa application for UK. They are very professional and the entire team is supportive. I would recommed them for all your needs to study abroad. My Dream came true with them.
+                  </h5>
+                  <footer class="blockquote-footer, fw-bold" style="color: white;">Fathima Fida <cite title="Source Title">- UK</cite></footer>
+                  <!-- Client review stars -->
+                  <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                </blockquote>
+              </div>
+              
+              {% for testmonial in testmonial %}
+              <div class="carousel-item text-center p-4">
+                <blockquote class="blockquote text-center">
+                  <h5 class="mb-0 text-white"><i class="fa fa-quote-left"></i> {{testmonial.discription}}
+                  </h5>
+                  <footer class="blockquote-footer, fw-bold" style="color: white;">{{testmonial.name}}<cite title="Source Title">- {{testmonial.origin}}</cite></footer>
+                  <!-- Client review stars -->
+                  <!-- "fas fa-star" for a full star, "far fa-star" for an empty star, "far fa-star-half-alt" for a half star. -->
+                </blockquote>
+              </div>
+              {% endfor %}
+              
+
+              
+            </div>
+            <ol class="carousel-indicators">
+              <li data-target="#client-testimonial-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="1"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="2"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="3"></li>
+              <li data-target="#client-testimonial-carousel" data-slide-to="4"></li>
+            </ol>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6 ftco-animate d-none d-md-block d-lg-block ">
+        <img src="{% static 'images/FC Testimonial.png' %}" style="max-width: 600px" />
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="ftco-intro ftco-section ftco-no-pb" style="background-color: white;">
+  <div class="container" style="max-width: 1400px">
+     <div class="row justify-content-center">
+        <div class="col-md-12 text-center">
+          <div>
+              <div class="overlay"></div>
+              <h2 style="color: #518bfc">With you at every step - from one point to another </h2>
+              <p style="color: black;">We can manage your dream building A small river named Duden flows by their place</p>
+              <!--  -->
+              <br>
+              <br>
+              <div class="card-deck">
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/1.png' %}" alt="Card image cap">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h4 class="card-title text-white">Counselling</h4>
+                    <p class="card-text"> Understanding the profile is an important and challenging process. With our expert  advice students would know which country and what course they need to pursue for better careers.</p>
+
+                  </div>
+                </div>
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/2.png' %}" alt="Card image cap">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h4 class="card-title text-white">Applications</h4>
+                    <p class="card-text">With all our experience we start applying to various universities after collection proper documents from students such as Academics, Passport, Letter of Recommendations, Statement of purpose etc.</p>
+
+                  </div>
+                </div>
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/3.png' %}" alt="Card image cap">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h4 class="card-title text-white">Offers and Acceptance</h4>
+                    <p class="card-text">Once the students receives offers from Universities we help them to proceed further with accepting the offers.</p>
+
+                  </div>
+                </div>
+              </div>
+<br>
+<br>
+              <div class="card-deck">
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/4.png' %}" alt="Card image cap" style="margin-top: 27px;">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h4 class="card-title text-white">Visa Assistance</h4>
+                    <p class="card-text">Our Visa Experts helps students in Visa Documents and required assistance in Filing student visas</p>
+
+                  </div>
+                </div>
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/5.png' %}" alt="Card image cap">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h4 class="card-title text-white">Educational Loans and Forex</h4>
+                    <p class="card-text">We give assistance in Financing your studies by providing Educational Loan services with our associated banks such as State Bank of India, Indian Bank, Bank of India, HDFC etc. We also provide Forex Assistance to our students.</p>
+
+                  </div>
+                </div>
+                <div class="card" style="border: none;">
+                  <img class="card-img-top" src="{% static 'images/homecards/6.png' %}" alt="Card image cap">
+                  <div class="card-body" style="background-color: #4986FB; border-radius: 30px;">
+                    <h5 class="card-title text-white">Pre Departure and Post Departure Assistance</h5>
+                    <p class="card-text">We give Pre Departure briefing to all our students and accommodation assistance when they reach their dream destination.</p>
+
+                  </div>
+                </div>
+              </div>
+
+
+          </div>
+      </div>
+  </div>
+ </div>
+ </section>
+
+
+
+
+
+
+
+<section class="ftco-section services-section" style="background-color: white;">
+  <div class="container" style="max-width: 1500px;">
+    <div class="row d-flex">
+      <div class="col-md-6 heading-section pr-md-5 ftco-animate d-flex align-items-center">
+         <div class="w-100 mb-4 mb-md-0">
+            <span class="subheading">WELCOME TO FUTURE COUNSELORS</span>
+            <h2 class="mb-4">Want to Know, <br>How We Work?</h2>
+            <p>Nagpur's Overseas Study Consultancy, your one-stop destination for global education. Choosing the perfect country to study in can be a daunting task, but with our personalized guidance and expert advice, the process becomes seamless and enjoyable.</p>
+            <p>We understand that every student has unique aspirations and goals, and we are committed to helping you find the perfect study destination that aligns with them. From application assistance to pre-departure support, we provide a comprehensive service package to ensure.</p>
+            <div class="d-flex video-image align-items-center mt-md-4">
+
+         </div>
+     </div>
+ </div>
+ <div class="col-md-6">
+     <div class="row">
+        <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate" style="text-align: left;">
+          <div class="services">
+            <div class="icon d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 25px;" >1</div>
+            <div class="media-body">
+              <h3 class="heading mb-3">Select your Study Destination.</h3>
+              <p>Uncover your academic aspirations by selecting a unique study destination - the country of your choice sets the foundation for your educational journey.</p>
+          </div>
+      </div>      
+  </div>
+  <div class="col-md-12 col-lg-6 d-flex align-self-stretch ftco-animate"   style="text-align: left;">
+      <div class="services">
+        <div class="icon icon-2 d-flex align-items-center justify-content-center text-white font-weight-bold" style="font-size: 25px;">2</div>
+        <div class="media-body">
+          <h3 class="heading mb-3">Select your Study Preference</h3>
+          <p>Unlock a world of academic opportunities by carefully selecting your study preference- peruse a comprehensive list of institutions at your desired destination to find the perfect fit for you</p>
+      </div>
+  </div>    
+</div>
+<div class="col-md-12 col-lg-12 d-flex align-self-stretch ftco-animate"  style="text-align: left;">
+  <div class="services">
+    <div class="icon icon-3 d-flex align-items-center justify-content-center  text-white font-weight-bold" style="font-size: 25px;">3</div>
+    <div class="media-body">
+      <h3 class="heading mb-3">Apply Now</h3>
+      <p>Take the next step towards realizing your academic dreams by applying now- with your study destination in mind, submit your online application form to embark on your journey.</p>
+  </div>
+</div>      
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="container ftco-animate" id="video-testimonial" style="max-width: 1300px">
+  <div class="heading-section ftco-animate text-center">
+    <span class="subheading text-blue">Video Testimonial</span>
+    <h2 class="mb-4  text-dark">Seeing is believing, but hearing someone's personal experience can be truly inspiring.</h2>
+  </div>
+  <br>
+  <br>
+  <br>
+  <style>
+    .video-carousel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    
+    .video-container {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      width: 250px; /* adjust as needed */
+      height: 360px; /* adjust as needed */
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    
+    .video {
+
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    
+    .video::-webkit-media-controls-enclosure {
+      display: none !important;
+    }
+    
+    
+  </style>
+  <div class="video-carousel ftco-animate">
+    {% for videotestmonials in videotestmonials %}
+    <div class="video-container">
+      <iframe class="video" src="https://www.youtube.com/embed/{{videotestmonials.youtubelink}}" autoplay mute allowfullscreen></iframe>
+    </div>
+    {% endfor %}
+  </div>  
+</section>
+
+<br>
+<br>
+<br>
+
+<section class="mt-4 container ftco-animate">
+  <div class="heading-section ftco-animate text-center">
+    <span class="subheading text-blue">Our University Partnerships</span>
+    <h2 class="mb-4  text-dark">Our Partner Universities</h2>
+  </div>
+  <style>
+    .carousel {
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .carousel-container {
+      display: flex;
+      width: 400%; /* 4 images, each taking up 100% of the width */
+      animation: scroll 20s infinite linear; /* scroll for 20 seconds and repeat infinitely */
+      animation-delay: 2s; /* delay animation by 2 seconds for a more attractive effect */
+    }
+    
+    .carousel-container img {
+      height: 200px;
+      width: 200px; /* each image takes up 1/4 of the container */
+      margin-right: 20px; /* add space between the images */
+      object-fit: cover; /* scale images to fit their containers */
+      transition: transform 0.5s ease-out; /* add a smooth transition effect when images change */
+    }
+    
+    .carousel-container img:last-of-type {
+      margin-right: 0; /* remove right margin from last image */
+    }
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* hide the overlay by default */
+      background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background */
+      transition: opacity 0.5s ease-out; /* add a smooth transition effect */
+    }
+    .carousel:hover .carousel-overlay {
+      opacity: 1; /* show the overlay when the mouse hovers over the carousel */
+    }
+    
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-10%); /* move container 3x the width of one image */
+      }
+    }
+    
+  </style>
+  <script>
+    const carousel = document.querySelector('.carousel');
+const container = document.querySelector('.carousel-container');
+
+carousel.addEventListener('mouseover', () => {
+  container.style.animationPlayState = 'paused'; /* pause the animation */
+});
+
+carousel.addEventListener('mouseout', () => {
+  container.style.animationPlayState = 'running'; /* resume the animation */
+});
+  </script>
+  <div class="carousel ftco-animate">
+    <div class="carousel-container">
+      <img src="{% static 'images/unilogo/unilogo_1.png' %}" alt="" style="">
+      <img src="{% static 'images/unilogo/unilogo_2.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_3.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_4.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_5.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_6.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_7.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_8.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_9.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_10.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_11.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_12.png' %}" alt="">
+      <img src="{% static 'images/unilogo/unilogo_13.png' %}" alt="">
+    </div>
+  </div>
+
+<br>
+<br>
+
+  <div class="heading-section ftco-animate text-center">
+    <h2 class="mb-4  text-dark">Our Membership & Accredations</h2>
+  </div>
+  <br>
+  <style>
+    .carousel {
+      overflow: hidden;
+      width: 100%;
+    }
+    
+    .carousel-container {
+      display: flex;
+      width: 400%; /* 4 images, each taking up 100% of the width */
+      animation: scroll 20s infinite linear; /* scroll for 20 seconds and repeat infinitely */
+      animation-delay: 2s; /* delay animation by 2 seconds for a more attractive effect */
+    }
+    
+    .carousel-container img {
+      height: 200px;
+      width: 200px; /* each image takes up 1/4 of the container */
+      margin-right: 20px; /* add space between the images */
+      object-fit: cover; /* scale images to fit their containers */ 
+      transition: transform 0.5s ease-out; /* add a smooth transition effect when images change */
+    }
+    
+    .carousel-container img:last-of-type {
+      margin-right: 0; /* remove right margin from last image */
+    }
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* hide the overlay by default */
+      background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background */
+      transition: opacity 0.5s ease-out; /* add a smooth transition effect */
+    }
+    .carousel:hover .carousel-overlay {
+      opacity: 1; /* show the overlay when the mouse hovers over the carousel */
+    }
+    
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-10%); /* move container 3x the width of one image */
+      }
+    }
+    
+  </style>
+  <script>
+    const carousel = document.querySelector('.carousel');
+const container = document.querySelector('.carousel-container');
+
+carousel.addEventListener('mouseover', () => {
+  container.style.animationPlayState = 'paused'; /* pause the animation */
+});
+
+carousel.addEventListener('mouseout', () => {
+  container.style.animationPlayState = 'running'; /* resume the animation */
+});
+  </script>
+  <div class="carousel ftco-animate">
+    <div class="carousel-container">
+      <img src="{% static 'images/patner/mem_1.png' %}" alt="Image 1">
+      <img src="{% static 'images/patner/mem_2.png' %}" alt="Image 2">
+      <img src="{% static 'images/patner/mem_3.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_4.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_5.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_6.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_7.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_8.png' %}" alt="Image 3">
+      <img src="{% static 'images/patner/mem_9.png' %}" alt="Image 3">
+    </div>
+  </div>
+  
+</section>
+
+
+
+
+<section style="margin-top: 140px; margin-bottom: -48px">
+  <div class="container-fluid py-5" >
+    <div class="col-md-12 heading-section text-center ftco-animate" style="color: #4986FC;">
+      <span class="subheading">Success Stories</span>
+      <h2 class="mb-4">Our Success Stories on their Study Abroad Experience</h2>
+   </div>
+    <div class="row">
+      <div class="col-sm-4 text-light d-flex flex-column justify-content-center align-items-center" style="padding: 60px; height: 300px; background-color: #4986fccc;">
+        <p>Join us on our adventures! Stay up-to-date with our latest videos by checking out our vlog section. Watch as we explore new places and share our experiences with you.</p>
+        <a href="https://www.youtube.com/@futurecounselors_official" class="popup-button">Watch Now</a>
+      </div>
+      <div class="col-sm-4  text-light d-flex flex-column justify-content-center align-items-center " style="padding: 60px; height: 300px; background-color: #e449adbd;">
+        <p>Check out our student testimonial section to hear real stories and experiences. See why they recommend us and choose to study with us again!</p>
+        <a href="#video-testimonial" class="popup-button">Watch More</a>
+      </div>
+      <div class="col-sm-4  text-light d-flex flex-column justify-content-center align-items-center " style="padding: 60px; height: 300px; background-color: #fc9927cf;">
+        <p>Discover new ideas and inspiration on our blog! Explore our collection of articles on travel, lifestyle, and other topics that matter to you. Find tips and insights to help you live your best life.</p>
+        <a href="{% url 'blog' %}" class="popup-button" style="">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% include "footer.html" %}
+{% endblock body %}

@@ -1,0 +1,419 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+background: #F9F9F9;
+padding: 25px;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#contact h3 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 10px;
+}
+
+#contact h4 {
+margin: 5px 0 15px;
+display: block;
+font-size: 13px;
+font-weight: 400;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+-webkit-transition: border-color 0.3s ease-in-out;
+-moz-transition: border-color 0.3s ease-in-out;
+transition: border-color 0.3s ease-in-out;
+border: 1px solid #aaa;
+}
+
+#contact textarea {
+height: 100px;
+max-width: 100%;
+resize: none;
+}
+
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #E449AD;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+border-radius: 20px;
+}
+
+#contact button[type="submit"]:hover {
+background: #bf2e8c;
+-webkit-transition: background 0.3s ease-in-out;
+-moz-transition: background 0.3s ease-in-out;
+transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+outline: 0;
+border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+color: #888;
+}
+
+:-moz-placeholder {
+color: #888;
+}
+
+::-moz-placeholder {
+color: #888;
+}
+
+:-ms-input-placeholder {
+color: #888;
+}
+</style>
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/bg_2.jpg' %}');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center">
+					<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span><a>Test Prep <i class="fa fa-chevron-right"></i></a></span> <span>TOEFL<i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">TOEFL Exam Overview</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <section class="ftco-section ftco-no-pt ftco-no-pb">
+    <div class="container" style="max-width: 1400px;">
+      <div class="row">
+        <div class="col-lg-8 ftco-animate py-md-5 mt-md-5">
+          <img src="https://i.ibb.co/QfNqPsJ/image-removebg-preview-39.png" alt="" style="max-width: 320px;"/>
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL Full-Form</h2>
+                <p>Test of English as a Foreign Language</p><hr>
+                <h2 style="font-weight: 600; margin-top: 50px;">What is TOEFL Exam?</h2>
+				<p style="justify-content: center; font-weight: 3300;">The TOEFL test is widely accepted by American and Canadian colleges and universities worldwide. It assesses overseas students' English proficiency in academic settings. The TOEFL exam is now available at home, and a shorter version called TOEFL Essential Test will launch in August 2021. ETS accepts Aadhar Cards as student ID for TOEFL exam enrollment from India. Students can choose from various test dates and locations.</p>
+        </div> 
+        <div class="col-lg-4 ftco-animate py-md-5 mt-md-5" id="sampleregistration">
+          <div class="container">  
+            {% include 'registerform.html' %}
+            <br>
+            <br>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="">
+           
+        <br>
+        <br>
+        <section class="container" style="max-width: 1000px">
+          <style>
+            
+            .video-container {
+              position: relative;
+              width: 100%;
+              height: 0;
+              padding-bottom: 56.25%; /* 16:9 aspect ratio */
+              overflow: hidden;
+            }
+            
+            .video-container video {
+              position: absolute;
+              top: 0;
+              left: 0;
+              border-radius: 50px;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+            
+            .video-container .overlay {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              {% comment %} background-color: rgba(0, 0, 0, 0.4); {% endcomment %}
+            }
+            
+            .video-container .play-button {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 80px;
+              height: 80px;
+              background-color: rgba(0, 0, 0, 0.4);
+              border: none;
+              border-radius: 50%;
+              cursor: pointer;
+              transition: all 0.3s ease-in-out;
+            }
+            .video-container .play-button.hidden {
+              display: none;
+            }
+            
+            .video-container .play-button::before {
+              content: "";
+              display: block;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 20px 0 20px 40px;
+              border-color: transparent transparent transparent white;
+            }
+            
+            .video-container .play-button:hover {
+              transform: translate(-50%, -50%) scale(1.2);
+            }
+            
+            .video-container .text {
+              position: absolute;
+              bottom: 10%;
+              left: 50%;
+              transform: translateX(-50%);
+              color: white;
+              font-size: 24px;
+              font-weight: bold;
+              letter-spacing: 2px;
+              text-align: center;
+              opacity: 0;
+              transition: all 0.3s ease-in-out;
+            }
+            
+            .video-container:hover .play-button {
+              transform: translate(-50%, -50%) scale(1.5);
+            }
+            
+            .video-container:hover .text {
+              opacity: 1;
+            }
+            
+            
+          </style>
+          <div class="video-container">
+            <video src="{% static 'video/exams/toefl.mp4' %}"  muted></video>
+            <div class="overlay"></div>
+            <div class="play-button"></div>
+          </div>
+          <script>
+        
+            const video = document.querySelector('video');
+            const playButton = document.querySelector('.play-button');
+            
+            playButton.addEventListener('click', function() {
+              if (video.paused) {
+                video.play();
+                playButton.classList.add('paused');
+              } else {
+                video.pause();
+                playButton.classList.remove('paused');
+              }
+            });
+            
+            video.addEventListener('click', function() {
+              if (video.paused) {
+                video.play();
+                playButton.classList.add('paused');
+              } else {
+                video.pause();
+                playButton.classList.remove('paused');
+              }
+            });
+            
+            video.addEventListener('ended', function() {
+              playButton.classList.remove('paused');
+            });
+            
+            video.addEventListener('play', function() {
+              playButton.classList.add('hidden');
+            });
+            
+            video.addEventListener('pause', function() {
+              playButton.classList.remove('hidden');
+            });
+            
+        
+          </script>
+        </section>
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+
+                <h2 style="font-weight: 600; margin-top: 50px;">Why TOEFL is Important?</h2>
+                <ol>
+                    <li><span class="font-weight-bold text-black">TOEFL becomes an inseparable component of your ambition of pursuing higher education from one of the overseas institutions—essentially English speaking in nature—as you commence on your dream of pursuing higher education from one of the overseas universities.</li><br>
+                    <li><span class="font-weight-bold text-black">Whether you want to attend an IT training school or continue your education in an English language course, you must pass the TOEFL exam.</li><br>
+                    <li><span class="font-weight-bold text-black">It demonstrates your ability to utilise and comprehend English.</li><br>
+                    <li><span class="font-weight-bold text-black">The scope of usage and comprehension includes reading, hearing, speaking, listening, and writing.</li><br>
+                    <li><span class="font-weight-bold text-black">This yardstick of evaluation is used by more than 130 countries, including Australia, the United Kingdom, and the United States of America.</li><br>
+                    <li><span class="font-weight-bold text-black">The fact that the measurement pattern controls the entrance system of over 8000 universities says words about its worldwide significance.</li><br>
+                </ol>
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">Who Should take the toefl Exam?</h2>
+				<p style="justify-content: center; font-weight: 3300;">Those who take the TOEFL typically desire to study at a university or graduate school in another country. The TOEFL, on the other hand, is open to anybody who wants to demonstrate proficiency of English for academic purposes. Anyone applying to a foreign high school, exchange programme, community college, or for a student visa falls under this category.</p>                
+
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">Types of TOEFL Exam</h2>
+				<p style="justify-content: center; font-weight: 3300;">TOEFL examinations are divided into two types:<br> 1. TOEFL - PBT <br> 2. TOEFL - iBT <br> As well as alternative TOEFL examinations like TOEFL Junior and IPT.</p>
+                
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL PBT: Paper Based Test</h2>
+                				<p style="justify-content: center; font-weight: 3300;">The Paper-based examination, being one of the most prevalent versions of TOEFL exam, is administered in offline mode. It has a total duration of 2 hours and 25 minutes, is divided into three pieces, and is only available in regions where internet access is not available. Take a look at the TOEFL PBT exam pattern provided below.</p><br>
+                <section class="container" style="max-width: 1200px;">
+                    <table class="table table-striped" style="margin: auto; text-align: left;">
+                        <thead>
+                            <tr class="table-primary">
+                              <th scope="col">Reading</th>
+                              <th scope="col">Listening</th>
+                              <th scope="col">Writing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>                          
+                            <td>54 minutes</td>
+                            <td>41 minutes approx.</td>
+                            <td>50 minutes</td>
+                          </tr>
+                          <tr>
+                            <td>30 MCQs</td>
+                            <td>28 MCQs</td>
+                            <td>2 Constructed Responses</td>
+                          </tr>
+                          <tr>
+                            <td>3 Reading Comprehension Passages with 10 questions each</td>
+                            <td>2 Conversations with 3 lectures and a total of 28 questions</td>
+                            <td>1 Integrated Task &amp; Independent Task</td>                      
+                          </tr>
+                        </tbody>
+                      </table>
+                </section>
+                
+                        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL IBT: Internet-Based Test</h2>
+                				<p style="justify-content: center; font-weight: 3300;">The Internet-based TOEFL consists of four sections: reading, listening, speaking, and writing, with a total time limit of four hours. It is one of the most popular forms of TOEFL exams and has replaced the computer-based examination, which has been discontinued since 2006. Examine the major features of the iBT TOEFL exam:</p><br>
+               
+               
+                <h2 style="font-weight: 600; margin-top: 50px;">Other Types of TOEFL Exam</h2>
+				<p style="justify-content: center; font-weight: 3300;">Now that you are familiar with the two primary forms of TOEFL exams that you might take to enrol for a programme overseas, you should also be aware of three lesser-known variants.</p>
+        <ol>
+                    <li><span class="font-weight-bold text-black">CBT (Computer Based Examination): This was a popular TOEFL exam in the past,however it has since been superseded by the Internet-based test, and CBT was terminated in 2006.</li><br>
+                    <li><span class="font-weight-bold text-black">TOEFL IPT: IPT is for Institutional Testing Program, and it is widely used in academic settings to test the English competence of non-native English speakers.</li><br>
+                    <li><span class="font-weight-bold text-black">TOEFL Junior Exams: The TOEFL Junior Tests assess English competence in middle school students aged 11 and above. It is available in two formats: paper-based and computer-based. This exam is divided into four sections: reading comprehension, listening comprehension, speaking, and writing.</li><br>
+        </ol>
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL Exam Eligibility</h2>
+				<p style="justify-content: center; font-weight: 3300;">Students who want to study abroad must take the TOEFL exam. Many students are confused about the TOEFL eligibility criterion. Candidates will be relieved to learn that ETS, the organisation in charge of administering the TOEFL iBT, has not established any age requirements, educational qualifications, or prerequisites for taking the TOEFL exam.</p>
+                
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL Exam Duration</h2>
+				<p style="justify-content: center; font-weight: 3300;">The entire test takes roughly 3 hours to complete, but you should leave 312 hours to allow for check-in.</p>
+                
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL Exam Syllabus &amp; Pattern</h2>
+				<p style="justify-content: center; font-weight: 3300;">The TOEFL 2021 exam format includes English reading, writing, speaking, and listening. TOEFL Reading and Listening parts are made up of MCQs, and the total number of MCQs in these two sections ranges from 58 to 79. The TOEFL writing portion tasks are descriptive. Candidates must deliver brief to extended replies to the questions posed during the speaking phase. The TOEFL exam lasts around three hours.</p>
+            
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                <h2 style="font-weight: 600; margin-top: 50px;">How to Prepare for TOEFL?</h2>
+                <ul>
+                    <li>There are two methods to prepare for the TOEFL: self-study and attending coaching programmes. Which path you take is determined on your degree of language competence and comfort. You do not need to attend coaching lessons if you are already fluent in English; you may prepare for the exam on your own. You only need to determine when you should begin preparing for TOEFL.</li>
+                    <li>Furthermore, if money is an issue, self-study is a preferable alternative. However, keep in mind that in order to study independently, you must have access to the most up-to-date preparation suggestions for each portion of the TOEFL exam.</li>
+                    <li>Coaching classes, on the other hand, are an excellent alternative if you don't have enough time and require expert supervision for test preparation. Your time will be better handled because attending lessons on a regular basis will become part of your habit.</li>
+                </ul> 
+        <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 200px; background-color: #727FE9; color: white; ">Start Prepare TOEFL</a>
+</div>
+
+                <h2 style="font-weight: 600; margin-top: 50px;">TOEFL Accepted Countries</h2>
+				<p style="justify-content: center; font-weight: 3300;">The United States, the United Kingdom, Canada, Australia, New Zealand, France, Germany, Singapore, Japan, and other nations where English competence is required in graduate schools and universities.</p>
+            
+                    <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+                            <h2 style="font-weight: 600; margin-top: 50px;">TOEFL vs IELTS which is more accepted</h2>
+				<p style="justify-content: center; font-weight: 3300;">The TOEFL is more often recognised by American colleges, while the IELTS is more commonly accepted abroad, however scores from either exam are accepted by many chools. However, a school&#39;s choice for which exam you take should be considered as well.<br>English language certificates are helpful in gaining admission to prestigious colleges. Many of them demand you to obtain the predetermined grades in order to be eligible to apply. A good score, in any case, boosts your chances of admission.</p><br>
+
+      
+              <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+        
+        <h2 style="font-weight: 600; margin-top: 50px; text-align: center;">Are You Planning to Take TOEFL Courses?<br>Contact Future Counselors, Meet Our Education Counselors. <br>Get FREE Education Counselling Today!</h2>
+            </div>
+                    <div style="display: flex; justify-content: center;">
+        <a href="#sampleregistration" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+	</section>
+  
+      <div class="container " style="text-align: center">
+      <a href="{% static 'pdf/Document Checklist Australia.pdf' %}" class="popup-button" style="width:100%;  background-color: #727FE9; color: white; " download>Download the material</a>
+      </div>
+      <br>
+
+{% include "footer.html" %}
+{% endblock body %}

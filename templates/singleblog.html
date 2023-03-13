@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+{% for blog in blogdetail  %}
+  <title>{{blog.title}} | Future Counselors</title>
+	<meta name="description" content="Read our blog post on {{blog.title}}  to gain valuable insights and tips on {{blog.title}}. At Future Counselors, we provide expert guidance and support to help you achieve your academic and career goals.">
+	<meta name="keywords" content="{{blog.title}}, blog post, study abroad, education overseas, Future Counselors, India">
+	<link rel="canonical" href='https://www.futurecounselors.com/blog/{{blog.title}}'> 
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% endfor %}
+{% endblock head %}
+
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+
+
+
+
+
+ <section class="hero-wrap hero-wrap-2" style="background-image: url('https://img.freepik.com/free-photo/freelance-young-asian-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3022.jpg?w=1380&t=st=1676466692~exp=1676467292~hmac=65bf3996ca36d11e92722500caa241d1507416a1c3146b835fdee8de4d16649d');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+         <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="{% url 'blog'  %}">Blog </a></span> </p>
+         <h1 class="mb-0 bread">Our Blog</h1>
+       </div>
+     </div>
+   </div>
+  </section>
+ 
+  <section class="ftco-section ftco-no-pt ftco-no-pb ftco-animate">
+    <div class="container">
+      <div class="row">
+
+
+        {% for blog in blogdetail  %}
+        <div class="col-lg-8 ftco-animate py-md-5 mt-md-5 ftco-animate">
+          <h2 class="mb-3 font-weight-bold">{{blog.title}}</h2>
+          <p style="text-align: justify;">{{blog.discription}}</p>
+          <p>
+            <img src="{{blog.image.url}}" alt="" class="img-fluid">
+          </p>
+        </div> 
+        
+        
+        {% endfor %}<!-- .col-md-8 -->
+        <div class="col-lg-4 sidebar ftco-animate pl-md-4 py-md-5 ftco-animate">
+  
+          <div class="sidebar-box ftco-animate">
+            <h3>Recent Blog</h3>
+            
+           {% for blog in blogs %}
+            <div class="block-21 mb-4 d-flex ftco-animate">
+              <a class="blog-img mr-4" style="background-image: url({{blog.image.url}});"></a>
+              <div class="text">
+                <h3 class="heading"><a href="#">{{blog.title}}</a></h3>
+                <div class="meta">
+                  <div><a href="#"><span class="fa fa-calendar"></span> {{blog.date}}</a></div>
+                  <div><a href="#"><span class="fa fa-user"></span> Future counselor</a></div>
+                </div>
+              </div>
+
+            </div>
+            {% endfor %}
+          </div>
+  
+          
+
+        </div>
+  
+      </div>
+    </div>
+  </section> <!-- .section -->	
+
+  <section style="margin-top: 20px; margin-bottom: -48px">
+    <div class="container-fluid py-5" >
+      <div class="col-md-12 heading-section text-center ftco-animate">
+        <span class="subheading">Student Success Stories</span>
+        <h2 class="mb-4">Hear from our Satisfied Students on their Study Abroad Experience</h2>
+     </div>
+      <div class="row ftco-animate">
+        <div class=" ftco-animate col-sm-4 bg-primary text-light d-flex flex-column justify-content-center align-items-center" style="padding: 60px; height: 300px">
+          <p>Join us on our adventures! Stay up-to-date with our latest videos by checking out our vlog section. Watch as we explore new places and share our experiences with you.</p>
+          <a href="https://www.youtube.com/@futurecounselors_official" class="popup-button">Watch Now</a>
+        </div>
+        <div class=" ftco-animate col-sm-4 bg-secondary text-light d-flex flex-column justify-content-center align-items-center " style="padding: 60px; height: 300px">
+          <p>Check out our student testimonial section to hear real stories and experiences. See why they recommend us and choose to study with us again!</p>
+          <a href="#video-testimonial" class="popup-button">Watch More</a>
+        </div>
+        <div class="ftco-animate col-sm-4 bg-info text-light d-flex flex-column justify-content-center align-items-center " style="padding: 60px; height: 300px">
+          <p>Discover new ideas and inspiration on our blog! Explore our collection of articles on travel, lifestyle, and other topics that matter to you. Find tips and insights to help you live your best life.</p>
+          <a href="{% url 'blog' %}" class="popup-button" style="">Read More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  {% include 'footer.html' %}
+
+
+
+{% endblock %}

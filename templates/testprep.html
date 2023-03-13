@@ -1,0 +1,307 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+	
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/bg_2.jpg' %}');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center">
+					<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Test Prep<i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">Ace Your Language Test and Unlock Your Potential with India's English Test Preparation Classes!</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<h2 style="font-weight: 600;">English Proficiency Test</h2><hr><br>
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-6 ">
+					<h3 style="font-weight: 600;">Why is the English Proficiency Test vital to studying overseas?</h3>
+					<p style="justify-content: center; font-weight: 3300; text-align: justify;">Transnational scholars aspiring to pursue their advanced education in countries similar as Australia, New Zealand, Canada, the US, and the UK, are needed to submit the English language proficiency test results as a part of their admission process in universities academic institutions.<br><br> The English proficiency test will examine whether your English language chops are acceptable to communicate, understand and produce scholarly jotting during your academic studies. utmost countries demand transnational scholars to submit the results of one of the standardised English language proficiency tests similar as IELTS, GRE, and PTE.<br><br> Depending on the course, course duration, university, institution, and the country you choose, you might be exempted from the standardised English proficiency test. Still, you must take up any one of the approved English language proficiency tests to be eligible to study in your asked country or university.</p>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 ">
+					<style>
+						@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #E449AD;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #bf2e8c;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+					</style>
+
+					<div class="container">  
+						<form id="contact" action="" method="post">
+						
+						  <h3 class="font-weight-bold">Are You Interested in Taking Classes From us?</h3>
+						
+						  <h3>Register Now</h3>
+						  <fieldset>
+							<input placeholder="Your name" type="text" tabindex="1" required autofocus>
+						  </fieldset>
+						  <fieldset>
+							<input placeholder="Your Email Address" type="email" tabindex="2" required>
+						  </fieldset>
+						  <fieldset>
+							<input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+						  </fieldset>
+						  <fieldset>
+							<input placeholder="Subject" type="url" tabindex="4" required>
+						  </fieldset>
+						  <fieldset>
+							<textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+						  </fieldset>
+						  <fieldset>
+							<button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+						  </fieldset>
+						</form>
+					</div>
+
+
+				</div>
+			</div>
+	</section>
+
+
+	<section class=" bg-light">
+		<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-6" style="text-align: center;">
+				<img src="{% static 'images/testprep.png' %}" alt="" style="max-width: 320px;"/>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 " style=" margin: auto; ">
+				<h2 class="font-weight-bold">Three Preferred English Proficiency Test to study abroad.</h2>
+				<ul>
+					<li>IELTS  - The International English Language Test </li>
+					<li>GRE - Graduate Record Examination</li>
+					<li>PTE      - Pearson Tests of English</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="container-fluid  " >
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-6" style="margin-top: 40px;">
+				<h2 class="font-weight-bold">What is IELTS exam?</h2>
+					<p style="text-align: left;">The IELTS test is one of the standardised English proficiency tests approved by over 100 countries to reuse transnational scholars ’ advanced education operations. The IELTS test structure and questions are framed by some of the world’s stylish English language experts to assess the scholars ’ language chops. <br> <br>Transnational citizens prefer to take up the IELTS English proficiency test when they either need to study overseas or apply for a PR.<br><br>IELTS examinations are classified into two types,i.e) Academic IELTS test and General IELTS test.</p>
+					<ul style="text-align: left;">
+						<li><span class="font-weight-bold text-black" >Academic IELTS Exam </span>- Designed especially for international students applying to study at a designated university or institution across the world.</li>
+						<li> <span class="font-weight-bold text-black">General IELTS Exam </span>- Designed especially for international citizens wanting to immigrate to an English-speaking country such as Australia, New Zealand, Canada, the US, and the UK.</li>
+					</ul>
+			</div>
+			<div class="col-12 col-md-12 col-lg-6 " style=" margin: auto; text-align: center">
+				<img src="{% static 'images/test/test_1.png' %}" alt="" style="max-width: 300px;"/>
+			</div>
+		</div>
+	</div>
+	</section>
+
+	<section class="container-fluid  bg-light"style="margin-top: 40px;" >
+		<div class="container"style="margin-top: 40px;" >
+			<div class="row" style="margin-top: 40px;">
+				<div class="col-12 col-md-12 col-lg-6" style="margin-top: 40px; text-align: center; margin:auto;">
+					<img src="{% static 'images/test/test_2.png' %}" alt="" style="max-width: 300px; margin:auto;"/>
+				</div>
+				<div class="col-12 col-md-12 col-lg-6 " style=" margin: auto; margin-top: 40px;">
+					<h2 class="font-weight-bold">What is GRE exam?</h2>
+					<p style="text-align: left;">The GRE is a multiple- choice, computer- grounded, formalized test that's frequently needed for admission to graduate programs and graduate business programs( MBA) encyclopedically. GRE is one of the most generally accepted examinations by universities and sodalities abroad for admissions to graduate programs.<br><br>Scholars who want to pursue a master’s,Ph.D., or MBA are also needed to take the GRE General Test. In addition, scholars give the GRE test to get a merit- grounded education for mongrel academy. Thousands of graduate seminaries across the world accept the GRE test score. Besides this, colorful law seminaries and business seminaries, and different departments within these institutions accept the GRE test scores.</p>
+					<ul style="text-align: left;">
+						<li><span class="font-weight-bold text-black" >GRE General Text </span>- Students who desire to study for an MS degree in a variety of subjects overseas take the GRE General Test. </li>
+						<li><span class="font-weight-bold text-black" >GRE Subject Test </span>- The GRE Subject Test is designed to assess candidates' knowledge in a specific subject. The GRE Subject Test is administered in the months of September, October, and April, and it lasts 2 hours and 50 minutes.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		</section>
+
+		<section class="container-fluid  " >
+			<div class="container" style="margin-top: 40px;">
+				<div class="row">
+					<div class="col-12 col-md-12 col-lg-6" style="margin-top: 40px; ">
+						<h2 class="font-weight-bold">What is PTE exam?</h2>
+							<p style="text-align: left;">PTE test is one of the oldest English language proficiency tests to assess people’s jotting, speaking and reading chops. The Pearson Language Tests comprises two tests to examine the English proficiency of scholars wishing to study or work overseas. The two types of PTE examinations are PTE Academic and PTE General.<br></p>
+							<ul style="text-align: left;">
+								<li><span class="font-weight-bold text-black" > What's PTE Academic test? </span>- PTE Academic test is an online grounded English language proficiency test aimed at allowing scholars to take up the test at any course of a time. scholars ’ reading, harkening, writing, and speaking chops are examined in the PTE Academic format.</li>
+								<li> <span class="font-weight-bold text-black">What's PTE General test? </span>- PTE General is a paper- grounded on- room English language proficiency test. This format is most suitable for people looking to either work or resettle overseas. Unlike PTE Academic, the PTE General test is conducted only in specific months of the time.</li>
+							</ul>
+					</div>
+					<div class="col-12 col-md-12 col-lg-6 " style=" margin: auto; text-align: center">
+						<img src="{% static 'images/test/test_3.png' %}" alt="" style="max-width: 300px;"/>
+					</div>
+				</div>
+			</div>
+			</section>
+			
+
+			<section class="container" style="margin-top: 50px; max-width: 1200px;">
+				<table class="table table-striped" style="margin: auto; text-align: center;">
+					<thead>
+					  <tr class="table-primary">
+						<th scope="col">Courses</th>
+						<th scope="col">Preferred English Proficiency Test for each country</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">Undergraduate</th>
+						<td>TOEFL - the US and Canada
+							<br>
+							IELTS and PTE -  UK, New Zealand, and  Australia.
+						</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Law</th>
+						<td>TOEFL - US and Canada
+							<br>
+							IELTS and PTE - UK, New Zealand, and  Australia.
+						</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Medicine</th>
+						<td>TOEFL - US, UK, and Canada
+							<br>
+							IELTS and PTE - New Zealand and  Australia.</td>
+					  </tr>
+					  <tr>
+						<th scope="row">MS</th>
+						<td>TOEFL - Canada and the US.
+							<br>
+							IELTS and PTE - New Zealand, UK, and  Australia.</td>
+					  </tr>
+					  <tr>
+						<th scope="row">MBA</th>
+						<td>IELTS and PTE - Australia.
+							<br>
+							TOEFL - New Zealand, US, UK, and Canada</td>
+					  </tr>
+					  <tr>
+						<th scope="row">Diploma/certificate</th>
+						<td>TOEFL - US and Canada
+							<br>
+							IELTS and PTE -  UK, New Zealand, and  Australia.</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</section><br>
+
+{% include "footer.html" %}
+{% endblock body %}

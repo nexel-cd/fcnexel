@@ -1,0 +1,603 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Jadoo | Travel Agency Landing Page UI</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="manifest" href="{% static 'landingpage/assets/img/favicons/manifest.json">
+  <meta name="msapplication-TileImage" content="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="{% static 'landingpage/assets/css/theme.css' %}" rel="stylesheet" />
+
+  <style>
+    /* Style for the form */
+    /* form {
+			width: 50%;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #f2f2f2;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px #ccc;
+		} */
+    /* Style for the steps */
+    .step {
+      display: none;
+    }
+
+    /* Style for the active step */
+    .active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block"
+      data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand" href="index.html"><img
+            src="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}" height="75" alt="logo" /></a>
+      </div>
+    </nav>
+    <section style="padding-top: 7rem;">
+      <div class="bg-holder" style="background-image:url({% static 'landingpage/assets/img/hero/hero-bg.svg' %});">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row align-items-center">
+        </div>
+      </div>
+    </section><br><br><br><br><br><br>
+    <form style="text-align: center;" action="https://formsubmit.co/futurecounselors.fc@gmail.com" method="POST"
+      enctype="multipart/form-data">
+
+
+<!-- step 0  -->
+<div class="step active">
+  <h2 style="text-align: center;" class="fs-xl-8 fs-lg-5 fs-5 fw-bold text-capitalize">Choose Your Destination</h2><br>
+  <div class="container" style="max-width: 600px;">
+    <select name="Destination" class="form-select" aria-label="Default select example">
+      <option value="United Kingdom">United Kingdom</option>
+      <option value="United States, USA">United States, USA</option>
+      <option value="Canada">Canada</option>
+      <option value="Australia">Australia</option>
+      <option value="Ireland">Ireland</option>
+      <option value="New-Zealand">New-Zealand</option>
+      <option value="Germany">Germany</option>
+      <option value="France">France</option>
+      <option value="Europe">Europe</option>
+      <option value="Africa">Africa</option>
+      <option value="ASIA">ASIA</option>
+      
+    </select>
+  </div>
+  <br>
+  <br>
+ 
+  <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" type="button"
+    onclick="nextStep()">Next</button>
+</div>
+      
+      <!-- Step 1 -->
+      <div class="step">
+        <h2 style="text-align: center;" class="fs-xl-8 fs-lg-5 fs-5 fw-bold text-capitalize">Nice choice! What's your
+          year of study?</h2><br>
+        <div class="container" style="max-width: 600px;">
+          <select name="Year-Of-Study" class="form-select" aria-label="Default select example">
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+          </select>
+        </div>
+
+        <br>
+        <br>
+
+        <h2 style="text-align: center;" class="fs-xl-8 fs-lg-5 fs-5 fw-bold text-capitalize">Choose Intake Month</h2>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="Intake-Month" class="form-select" aria-label="Default select example">
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" type="button"
+        onclick="prevStep()">Previous</button>
+        <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" type="button"
+          onclick="nextStep()">Next</button>
+      </div>
+      <!-- Step 2 -->
+      <div class="step">
+        <h2>What level of study are you planning to pursue?</h2>
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="level-of-study" class="form-select" aria-label="Default select example">
+            <option value="Master">Master</option>
+            <option value="PhD">PhD</option>
+            <option value="PG Diploma">PG Diploma</option>
+            <option value="Bachelors">Bachelors</option>
+            <option value="MBA">MBA</option>
+            <option value="Not Decided">Not Decided</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <br>
+        <br>
+
+
+
+        <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" type="button"
+          onclick="prevStep()">Previous</button>
+        <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" type="button"
+          onclick="nextStep()">Next</button>
+      </div>
+      <!-- Step 3 -->
+      <div class="step">
+        <h2>What level of study are you planning to pursue?</h2>
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="level-of-study" class="form-select" aria-label="Default select example">
+            <option value="Accounting and Finance">Accounting and Finance</option>
+            <option value="Agriculture Sciences">Agriculture Sciences</option>
+            <option value="Animation and Design">Animation and Design</option>
+            <option value="Medical and Pure Sciences">Medical and Pure Sciences</option>
+            <option value="Architecture and Real Estate">Architecture and Real Estate</option>
+            <option value="Business Management and Entrepreneurship">Business Management and Entrepreneurship</option>
+            <option value="Computer Science and Technology">Computer Science and Technology</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Nursing and Medicine">Nursing and Medicine</option>
+            <option value="Hospitality and Tourism">Hospitality and Tourism</option>
+            <option value="Law and Legal Studies">Law and Legal Studies</option>
+            <option value="Marketing and Advertisement">Marketing and Advertisement</option>
+            <option value="Mass Communication and Media">Mass Communication and Media</option>
+            <option value="Art, Drama, Dance and Music">Art, Drama, Dance and Music</option>
+            <option value="Political and Social Sciences">Political and Social Sciences</option>
+            <option value="Language, Literature and Education">Language, Literature and Education</option>
+            <option value="Religion, Culture and Humanities">Religion, Culture and Humanities</option>
+            <option value="Forensic and Cybersecurity">Forensic and Cybersecurity</option>
+            <option value="Mathematics and Physics">Mathematics and Physics</option>
+            <option value="Psychology">Psychology</option>
+            <option value="Personal Care and Fitness">Personal Care and Fitness</option>
+          </select>
+        </div>
+        <br>
+        <br>
+
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+
+
+      <!-- step 4 -->
+      <div class="step">
+        <h2>Great adventures begin with a name. What's yours?</h2>
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <div class="input-group mb-3">
+            <span class="input-group-text"  id="inputGroup-sizing-default">First Name</span>
+            <input type="text" class="form-control" name="FirstName" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"  id="inputGroup-sizing-default">Last Name</span>
+            <input type="text" name="LastName" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+        </div>
+
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- step 5 -->
+      <div class="step">
+        <h2>Our in-house experts are here to support your study abroad dreams. How should we reach you?</h2>
+
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <div class="input-group mb-3">
+            <span class="input-group-text"  id="inputGroup-sizing-default">Email</span>
+            <input type="email" name="Email" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text"  id="inputGroup-sizing-default">Phono</span>
+            <input type="tel" class="form-control" name="PhoneNumber" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default" placeholder="Phone Number With Country code">
+          </div>
+        </div>
+        <br>
+        <br>
+
+
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+
+      <!-- step 6 -->
+      <div class="step">
+        <h2>Do you have passport with validity exceeding 6 months?</h2>
+        <br>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="passport-with-validity-exceeding-6-months" id="inlineRadi21" value="Yes" />
+          <label class="form-check-label" for="inlineRadi21">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="passport-with-validity-exceeding-6-months" id="inlineRadi22" value="No" />
+          <label class="form-check-label" for="inlineRadi22">No</label>
+        </div>
+        <br>
+        <br>
+        <h2>Have you appeared for IELTS/TOEFL or any English proficiency test?</h2>
+        <br>
+        <br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="appeared-for-IELTS/TOEFL" id="inlineRadi23" value="Yes" />
+          <label class="form-check-label" for="inlineRadi23">Yes</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="appeared-for-IELTS/TOEFL" id="inlineRadi24" value="No" />
+          <label class="form-check-label" for="inlineRadi24">No</label>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- step7 -->
+      <div class="step">
+        <h2>Select your English Proficiency test</h2>
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="English-Proficiency-test" id="options" class="form-select" aria-label="Default select example">
+            <option value="Choose Your Exam" active>Choose Your Exam</option>
+            <option value="IELTS">IELTS</option>
+            <option value="Others">Others</option>
+          </select>
+          <br>
+          <div id="option1-fields" class="fields">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Listing Score</span>
+              <input type="text" class="form-control" name="EPT-Listing" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Reading Score</span>
+              <input type="text" class="form-control" name="EPT-Reading" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Writing Score</span>
+              <input type="text" class="form-control" name="EPT-Writing" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Speaking Score</span>
+              <input type="text" class="form-control" name="EPT-Speaking" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Overall Score</span>
+              <input type="text" class="form-control" name="EPT-Overall" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+          <div id="option2-fields" class="fields">
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Exam Name</span>
+              <input type="text" class="form-control" name="ExamName" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="input-group mb-3">
+              <span class="input-group-text" id="inputGroup-sizing-default">Total Score</span>
+              <input type="text" class="form-control" name="OtherExamOverall" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+            </div>
+          </div>
+
+          <script>
+            const options = document.getElementById("options");
+            const option1Fields = document.getElementById("option1-fields");
+            const option2Fields = document.getElementById("option2-fields");
+
+            options.addEventListener("change", (event) => {
+              if (event.target.value === "IELTS") {
+                option1Fields.style.display = "block";
+                option2Fields.style.display = "none";
+              } else if (event.target.value === "Others") {
+                option1Fields.style.display = "none";
+                option2Fields.style.display = "block";
+              } else {
+                option1Fields.style.display = "none";
+                option2Fields.style.display = "none";
+              }
+            });
+          </script>
+
+
+          <!-- <div class="input-group mb-3">
+            <span class="input-group-text" id="inputGroup-sizing-default">Total Score</span>
+            <input type="email" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-default">
+          </div> -->
+        </div>
+
+
+        <br><br>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+
+
+      <!-- 8 -->
+      <div class="step">
+        <h2>How do you plan to fund your education?</h2>
+        <br>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="fund-your-education" id="" class="form-select" aria-label="Default select example">
+            <option value="Self Funded">Self Funded</option>
+            <option value="Parents">Parents</option>
+            <option value="Parents + Education Loan">Parents + Education Loan</option>
+            <option value="Self Funded + Education Loan">Self Funded + Education Loan</option>
+            <option value="Need Education Loan -  Collateral / No-Collateral">Need Education Loan - Collateral /
+              No-Collateral</option>
+            <option value="Looking for Partial Scholarship">Looking for Partial Scholarship</option>
+            <option value="Sibling/Guarantor/Relative Support">Sibling/Guarantor/Relative Support</option>
+            <option value="Excellent Merit Based - Full Scholarship">Excellent Merit Based - Full Scholarship</option>
+          </select>
+          <br>
+        </div>
+        <br>
+        <br>
+        <h2>Almost there. What is the approximate budget you have in mind?</h2>
+        <br>
+        <div class="container" style="max-width: 600px;">
+          <select name="approximate-budget" id="" class="form-select" aria-label="Default select example">
+            <option value="Upto INR 1000000">Upto INR 1000000</option>
+            <option value="INR 1100000 ~ 1500000">INR 1100000 ~ 1500000</option>
+            <option value="INR 1600000 ~ 2000000">INR 1600000 ~ 2000000</option>
+            <option value="INR 2100000 ~ 2500000">INR 2100000 ~ 2500000</option>
+            <option value="INR 2600000 ~ 3000000">INR 2600000 ~ 3000000</option>
+            <option value="INR 3100000 ~ 3500000">INR 3100000 ~ 3500000</option>
+            <option value="INR 3600000+">INR 3600000+</option>
+          </select>
+        </div>
+        <br>
+        <br>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="nextStep()">Next</button>
+      </div>
+
+      <!-- step 12 -->
+      <div class="step">
+        <h2>10th Details</h2>
+        <br>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <input type="text" name="10th-Details-percentage" class="form-control" placeholder="10th Percentage">
+            </div>
+            <div class="col">
+              <input type="text" name="10th-Details-yearPassing" class="form-control" placeholder="Year of Passing">
+            </div>
+            <div class="col">
+              <select name="10th-Details-Board" id="" class="form-select" aria-label="Default select example">
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="State Board">State Board</option>
+                <option value="Others">Others</option>
+
+              </select>
+            </div>
+          </div>
+          <br><br>
+          <h2>12th Details</h2>
+          <br>
+          <div class="row">
+            <div class="col">
+              <input type="text" name="12th-Details-percentage" class="form-control" placeholder="12th Percentage">
+            </div>
+            <div class="col">
+              <input type="text" name="12th-Details-YearPassing" class="form-control" placeholder="Year of Passing">
+            </div>
+            <div class="col">
+              <select name="12th-Details-Board" id="" class="form-select" aria-label="Default select example">
+                <option value="CBSE">CBSE</option>
+                <option value="ICSE">ICSE</option>
+                <option value="State Board">State Board</option>
+                <option value="Others">Others</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br><br>
+
+        <button type="button" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          onclick="prevStep()">Previous</button>
+        <button class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"
+          type="submit">Submit</button>
+      </div>
+    </form>
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-5 pt-md-9" id="service">
+
+      <div class="container">
+        <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="{% static 'landingpage/assets/img/category/shape.svg' %}"
+            style="max-width: 200px" alt="service" /></div>
+        <div class="mb-7 text-center">
+          <h5 class="text-secondary">"Education is the passport to the future, for tomorrow belongs to those who prepare
+            for it today."</h5><br>
+          <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">We Offer Best Services</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3588/3588549.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Counselling</h4>
+                <p class="mb-0 fw-medium">Expert guidance for your successful career abroad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3157/3157914.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Applications</h4>
+                <p class="mb-0 fw-medium">Seamless applications with our expert guidance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/984/984022.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Offers & Acceptance</h4>
+                <p class="mb-0 fw-medium">Offer to acceptance we guide you every step.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/1257/1257248.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Visa Assistance</h4>
+                <p class="mb-0 fw-medium">Smooth visa processing with our expert guidance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3146/3146465.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Educational Loans & Forex</h4>
+                <p class="mb-0 fw-medium">Easy financing with our loan and forex services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/6112/6112054.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Pre & Post Departure Assistance</h4>
+                <p class="mb-0 fw-medium">Ready to go with our pre-departure briefings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3076/3076677.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Student Health Insurance</h4>
+                <p class="mb-0 fw-medium">Secure your health abroad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3701/3701836.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Student Accommodation</h4>
+                <p class="mb-0 fw-medium">Your home abroad with our accommodation options.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+    <script>
+      // Get all the steps in the form
+      const steps = document.querySelectorAll('.step');
+      // Set the current step to the first step
+      let currentStep = 0;
+      // Function to show the next step
+      function nextStep() {
+        // Hide the current step
+        steps[currentStep].classList.remove('active');
+        // Increment the current step
+        currentStep++;
+        // Show the new current step
+        steps[currentStep].classList.add('active');
+      }
+      // Function to show the previous step
+      function prevStep() {
+        // Hide the current step
+        steps[currentStep].classList.remove('active');
+        // Decrement the current step
+        currentStep--;
+        // Show the new current step
+        steps[currentStep].classList.add('active');
+      }
+    </script>
+</body>
+
+</html>

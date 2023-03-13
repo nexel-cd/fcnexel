@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+    <title>Blog | Future Counselors</title>
+	<meta name="description" content="Read our blog for helpful tips and advice on studying abroad, career planning, and more. Stay up to date with the latest news and trends in international education with Future Counselors.">
+	<meta name="keywords" content="blog, study abroad tips, career planning, international education, Future Counselors, India">
+	<link rel="canonical" href="https://www.futurecounselors.com/blog">
+	<meta name="robots" content="index,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+ 
+<section class="hero-wrap hero-wrap-2" style="background-image: url('https://img.freepik.com/free-photo/freelance-young-asian-businesswoman-casual-wear-using-laptop-working-living-room-home_7861-3022.jpg?w=1380&t=st=1676466692~exp=1676467292~hmac=65bf3996ca36d11e92722500caa241d1507416a1c3146b835fdee8de4d16649d');">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row no-gutters slider-text align-items-end justify-content-center">
+        <div class="col-md-9 ftco-animate pb-5 text-center">
+         <p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>Our Blog <i class="fa fa-chevron-right"></i></span></p>
+         <h1 class="mb-0 bread">Our Blog</h1>
+       </div>
+     </div>
+   </div>
+  </section>
+  
+  <section class="ftco-section bg-light">
+    <div class="container">
+        <div class="row d-flex">
+            {% for blog in blog %}
+            <div class="col-lg-4 ftco-animate">
+                <div class="blog-entry">
+                    <a href="{% url 'singleblog' blog.slug %}" class="block-20" style="background-image: url('{{blog.image.url}}');">
+                    </a>
+                    <div class="text d-block">
+                        <div class="meta">
+                            <p>
+                            <a href="{% url 'singleblog' blog.slug %}"><span class="fa fa-calendar mr-2"></span>{{blog.date}}</a>
+                            <a href="{% url 'singleblog' blog.slug %}"><span class="fa fa-user mr-2"></span>Future counselor</a>
+                            </p>
+                        </div>
+                        <h3 class="heading"><a href="{% url 'singleblog' blog.slug %}">{{blog.title}}</a></h3>
+                        <p>{{blog.discription|slice:":80"}}...</p>
+                        <p><a href="{% url 'singleblog' blog.slug %}" class="btn btn-secondary py-2 px-3">Read more</a></p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row mt-5">
+            <div class="col text-center">
+                <div class="block-27">
+                <ul>
+                    {% if blog.has_previous %}
+                    <li><a href="{{ blog.previous_page_number }}">&lt;</a></li>
+                    {% endif %}
+                    <li class="active"><span>{{ blog.number }}</span></li>
+                    {% if university.has_next %}
+                    <li><a href="#">&gt;</a></li>
+                    {% endif %}
+                </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  {% include 'footer.html' %}
+
+
+
+{% endblock %}

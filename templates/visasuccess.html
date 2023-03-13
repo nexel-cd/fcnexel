@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+{% load static %}
+{% block head %}
+<title>Visa Success | Future Counselors</title>
+<meta name="description"
+	content="Congratulations on your visa success! Future Counselors is thrilled to have helped you achieve your goal of studying abroad. Discover our other education overseas services and start planning your academic journey today.">
+<meta name="keywords" content="visa success, study abroad, education overseas, Future Counselors, India">
+<link rel="canonical" href="https://www.futurecounselors.com/visasuccess">
+<meta name="robots" content="noindex,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/visasuccess.jpg' %}');">
+	<div class="overlay"></div>
+	<div class="container">
+		<div class="row no-gutters slider-text align-items-end justify-content-center">
+			<div class="col-md-9 ftco-animate pb-5 text-center">
+				<p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i
+								class="fa fa-chevron-right"></i></a></span> <span>Visa success <i
+							class="fa fa-chevron-right"></i></span></p>
+				<h1 class="mb-0 bread">Visa Success</h1>
+			</div>
+		</div>
+	</div>
+</section>
+<br>
+<br>
+{% comment %} <section class="container" style="height: 200rem;">
+	<style>
+		.card {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			width: 300px;
+			height: 400px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+			overflow: hidden;
+		}
+
+		.card-image {
+			position: relative;
+			width: 100%;
+			height: 200px;
+			overflow: hidden;
+		}
+
+		.card-image img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.card-image:hover img {
+			transform: scale(1.2);
+		}
+
+		.card-content {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		.card-title {
+			font-size: 24px;
+			margin: 0 0 10px;
+		}
+
+		.card-text {
+			font-size: 16px;
+			margin: 0;
+		}
+	</style>
+
+	<div class="card">
+		<div class="card-image">
+			<img src="https://example.com/image.jpg" alt="Image">
+		</div>
+		<div class="card-content">
+			<h2 class="card-title">Heading</h2>
+			<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+	</div>
+
+
+
+
+
+
+</section> {% endcomment %}
+
+
+<div class="container-fluid">
+	<div class="row justify-content-center">
+
+
+
+		<section class="mt-4 container-fluid ftco-animate">
+			<div class="heading-section ftco-animate text-center">
+				<!-- <span class="subheading text-blue">Our University Partnerships</span> -->
+				<h2 class="mb-4  text-dark">Visa Success</h2>
+			</div>
+			<style>
+				.carousel {
+					overflow: hidden;
+					width: 100%;
+				}
+
+				.carousel-container {
+					display: flex;
+					width: 400%;
+					/* 4 images, each taking up 100% of the width */
+					animation: scroll 20s infinite linear;
+					/* scroll for 20 seconds and repeat infinitely */
+					animation-delay: 2s;
+					/* delay animation by 2 seconds for a more attractive effect */
+				}
+
+				.carousel-container img {
+					height: 200px;
+					width: 200px;
+					/* each image takes up 1/4 of the container */
+					margin-right: 20px;
+					/* add space between the images */
+					object-fit: cover;
+					/* scale images to fit their containers */
+					transition: transform 0.5s ease-out;
+					/* add a smooth transition effect when images change */
+				}
+
+				.carousel-container img:last-of-type {
+					margin-right: 0;
+					/* remove right margin from last image */
+				}
+
+				.carousel-overlay {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					opacity: 0;
+					/* hide the overlay by default */
+					background-color: rgba(0, 0, 0, 0.5);
+					/* add a semi-transparent background */
+					transition: opacity 0.5s ease-out;
+					/* add a smooth transition effect */
+				}
+
+				.carousel:hover .carousel-overlay {
+					opacity: 1;
+					/* show the overlay when the mouse hovers over the carousel */
+				}
+
+				@keyframes scroll {
+					0% {
+						transform: translateX(0);
+					}
+
+					100% {
+						transform: translateX(-10%);
+						/* move container 3x the width of one image */
+					}
+				}
+			</style>
+			<script>
+				const carousel = document.querySelector('.carousel');
+				const container = document.querySelector('.carousel-container');
+
+				carousel.addEventListener('mouseover', () => {
+					container.style.animationPlayState = 'paused'; /* pause the animation */
+				});
+
+				carousel.addEventListener('mouseout', () => {
+					container.style.animationPlayState = 'running'; /* resume the animation */
+				});
+			</script>
+			<div class="carousel ftco-animate">
+				<div class="carousel-container">
+					{% for visa in visa %}
+					<img src="{{visa.img.url}}" alt="" style="height: 800px; width: 1400px;">
+					{% endfor %}
+					
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+
+		
+
+		
+	</div>
+</div>
+
+<br>
+<br>
+
+
+
+
+
+
+
+{% include 'footer.html' %}
+
+
+
+{% endblock %}

@@ -1,0 +1,545 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <!-- ===============================================-->
+  <!--    Document Title-->
+  <!-- ===============================================-->
+  <title>Jadoo | Travel Agency Landing Page UI</title>
+
+
+  <!-- ===============================================-->
+  <!--    Favicons-->
+  <!-- ===============================================-->
+  <link rel="apple-touch-icon" sizes="180x180" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="shortcut icon" type="image/x-icon" href="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <link rel="manifest" href="{% static 'landingpage/assets/img/favicons/manifest.json' %}">
+  <meta name="msapplication-TileImage" content="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}">
+  <meta name="theme-color" content="#ffffff">
+
+
+  <!-- ===============================================-->
+  <!--    Stylesheets-->
+  <!-- ===============================================-->
+  <link href="{% static 'landingpage/assets/css/theme.css' %}" rel="stylesheet" />
+
+</head>
+
+
+<body>
+
+  <!-- ===============================================-->
+  <!--    Main Content-->
+  <!-- ===============================================-->
+  <main class="main" id="top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-5 d-block"
+      data-navbar-on-scroll="data-navbar-on-scroll">
+      <div class="container"><a class="navbar-brand" href="/"><img
+            src="{% static 'landingpage/assets\img\STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}" height="75" alt="logo" /></a>
+      </div>
+    </nav>
+    <section style="padding-top: 7rem;">
+      <div class="bg-holder" style="background-image:url({% static 'landingpage/assets/img/hero/hero-bg.svg' %});">
+      </div>
+      <!--/.bg-holder-->
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-5 col-lg-6 order-0 order-md-1 text-end"><img class="pt-7 pt-md-0 hero-img"
+              src="{% static 'landingpage/assets/img/hero/hero-img.png' %}" alt="hero-header" /></div>
+          <div class="col-md-7 col-lg-6 text-md-start text-center py-6">
+            <h4 class="fw-bold text-danger mb-3">Discover the Best Study Abroad Destinations</h4>
+            <h1 class="hero-title">Take Your Education to New Horizons</h1>
+            <p class="mb-4 fw-medium">Explore a World of Opportunities and Broaden Your Horizons with a Life-Changing
+              Study Abroad Experience.<br class="d-none d-xl-block" /> Immerse Yourself in New Cultures, Gain
+              International Perspective, and Open Doors to a Brighter Future.<br class="d-none d-xl-block" />Let Our
+              Experienced Consultants Guide You Every Step of the Way.</p>
+            <div class="text-center text-md-start"> <a
+                class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow" href="#!"
+                role="button">Find out more</a>
+              <div class="w-100 d-block d-md-none"></div><a href="#!" role="button" data-bs-toggle="modal"
+                data-bs-target="#popupVideo"><span
+                  class="btn btn-danger round-btn-lg rounded-circle me-3 danger-btn-shadow"> <img
+                    src="{% static 'landingpage/assets/img/hero/play.svg' %}" width="15" alt="paly" /></span></a><span class="fw-medium">Watch
+                Video</span>
+              <div class="modal fade" id="popupVideo" tabindex="-1" aria-labelledby="popupVideo" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                  <div class="modal-content">
+                    <iframe class="rounded" style="width:100%;max-height:500px;" height="500px"
+                      src="https://www.youtube.com/embed/_lhdhL4UDIo" title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen="allowfullscreen"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-5 pt-md-9" id="service">
+
+      <div class="container">
+        <div class="position-absolute z-index--1 end-0 d-none d-lg-block"><img src="{% static 'landingpage/assets/img/category/shape.svg' %}"
+            style="max-width: 200px" alt="service" /></div>
+        <div class="mb-7 text-center">
+          <h5 class="text-secondary">"Education is the passport to the future, for tomorrow belongs to those who prepare
+            for it today."</h5><br>
+          <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">We Offer Best Services</h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3588/3588549.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Counselling</h4>
+                <p class="mb-0 fw-medium">Expert guidance for your successful career abroad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3157/3157914.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Applications</h4>
+                <p class="mb-0 fw-medium">Seamless applications with our expert guidance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/984/984022.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Offers & Acceptance</h4>
+                <p class="mb-0 fw-medium">Offer to acceptance we guide you every step.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/1257/1257248.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Visa Assistance</h4>
+                <p class="mb-0 fw-medium">Smooth visa processing with our expert guidance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3146/3146465.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Educational Loans & Forex</h4>
+                <p class="mb-0 fw-medium">Easy financing with our loan and forex services.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/6112/6112054.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Pre & Post Departure Assistance</h4>
+                <p class="mb-0 fw-medium">Ready to go with our pre-departure briefings.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3076/3076677.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Student Health Insurance</h4>
+                <p class="mb-0 fw-medium">Secure your health abroad.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-6">
+            <div class="card service-card shadow-hover rounded-3 text-center align-items-center">
+              <div class="card-body p-xxl-5 p-4"> <img src="https://cdn-icons-png.flaticon.com/512/3701/3701836.png"
+                  width="75" alt="Service" />
+                <h4 class="mb-3">Student Accommodation</h4>
+                <p class="mb-0 fw-medium">Your home abroad with our accommodation options.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="pt-5" id="destination">
+
+      <div class="container">
+        <div class="position-absolute start-100 bottom-0 translate-middle-x d-none d-xl-block ms-xl-n4"><img
+            src="{% static 'landingpage/assets/img/dest/shape.svg' %}" alt="destination" /></div>
+        <div class="mb-7 text-center">
+          <h5 class="text-secondary">"The world is a book and those who do not travel read only one page."</h5>
+          <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Explore your Dream Study Destination.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/2YLDfKY/tower-bridge-london-uk.jpg" alt="UK" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">United Kingdom</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/Htv0SkX/statue-liberty-new-york-city-skyline-usa.jpg" alt="USA" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">United States, USA</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/jgFtxPV/toronto-sunrise.jpg" alt="Canada" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">Canada</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/y6HnVZY/sydney-opera-house-near-beautiful-sea-clear-blue-sky.jpg"
+                alt="australia" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">Australia</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/HYWm5sJ/lush-landscape-inveraray-castle-argyll-scotland.jpg" alt="ireland" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">Ireland</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card overflow-hidden shadow"> <img class="card-img-top"
+                src="https://i.ibb.co/RH3n11S/aerial-view-wanaka-new-zealand.jpg" alt="newzealand" />
+              <div class="card-body py-3 px-3">
+                <div class="d-flex flex-column flex-lg-row justify-content-between mb-1">
+                  <h4 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link"
+                      href="{% url 'landingpageform' %}">New-Zealand</a></h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+    </section>
+    <!-- <section> close ============================-->
+    <!-- ============================================-->
+
+    <div style="justify-content: center; text-align: center;">
+      <div class="container">
+        {% comment %} <h2 class="text-secondary" label for="destinations">Other Destinations :</h2></label>
+        <select id="destinations" name="destinations" class="form-select" aria-label="Default select example">
+          <option value="Germany">Germany</option>
+          <option value="France">France</option>
+          <option value="Europe">Europe</option>
+          <option value="Africa">Africa</option>
+          <option value="ASIA">ASIA</option>
+        </select> {% endcomment %}
+        <a href="{% url 'landingpageform' %}" class="btn btn-primary btn-lg me-md-4 mb-3 mb-md-0 border-0 primary-btn-shadow"> others </a>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section id="testimonial">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="mb-8 text-start">
+              <h5 class="text-secondary">Student Success Stories</h5>
+              <h3 class="fs-xl-10 fs-lg-8 fs-7 fw-bold font-cursive text-capitalize">Life-changing journeys - as told by
+                our students.</h3>
+            </div>
+          </div>
+          <div class="col-lg-1"></div>
+          <div class="col-lg-6">
+            <div class="pe-7 ps-5 ps-lg-0">
+              <div class="carousel slide carousel-fade position-static" id="testimonialIndicator"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button class="active" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="0"
+                    aria-current="true" aria-label="Testimonial 0"></button>
+                  <button class="false" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="1"
+                    aria-current="true" aria-label="Testimonial 1"></button>
+                  <button class="false" type="button" data-bs-target="#testimonialIndicator" data-bs-slide-to="2"
+                    aria-current="true" aria-label="Testimonial 2"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item position-relative active">
+                    <div class="card shadow" style="border-radius:10px;">
+                      <div class="card-body p-4">
+                        <p class="fw-medium mb-4">&quot;Superb Counselling, best and unbeatable services. I am happy to
+                          get assisted by Future Counselors for my Abroad education.&quot;</p>
+                        <h5 class="text-secondary">Gurpreet Singh</h5>
+                      </div>
+                    </div>
+                    <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                      style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                  </div>
+                  <div class="carousel-item position-relative ">
+                    <div class="card shadow" style="border-radius:10px;">
+                      <div class="card-body p-4">
+                        <p class="fw-medium mb-4">&quot;If you are planning for Abroad Education, Meet Future
+                          Counselors, Nagpur. They are the best consultants in Nagpur. 100% recommended.&quot;</p>
+                        <h5 class="text-secondary">Nikunj Sharma</h5>
+                      </div>
+                    </div>
+                    <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                      style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                  </div>
+                  <div class="carousel-item position-relative ">
+                    <div class="card shadow" style="border-radius:10px;">
+                      <div class="card-body p-4">
+                        <p class="fw-medium mb-4">&quot;They are the most professional study abroad consultants in
+                          Nagpur. I went to many places in Nagpur searching for Study options abroad few of them have
+                          big offices, few of them are unavailable, few of them are fake (No Knowledge- just bluffs),
+                          but when i reached Future Counselors, things here were very different.&quot;</p>
+                        <h5 class="text-secondary">SHRIYA ARORA</h5>
+                      </div>
+                    </div>
+                    <div class="card shadow-sm position-absolute top-0 z-index--1 mb-3 w-100 h-100"
+                      style="border-radius:10px;transform:translate(25px, 25px)"> </div>
+                  </div>
+                </div>
+                <div
+                  class="carousel-navigation d-flex flex-column flex-between-center position-absolute end-0 top-lg-50 bottom-0 translate-middle-y z-index-1 me-3 me-lg-0"
+                  style="height:60px;width:20px;">
+                  <button class="carousel-control-prev position-static" type="button"
+                    data-bs-target="#testimonialIndicator" data-bs-slide="prev"><img src="{% static 'landingpage/assets/img/icons/up.svg' %}"
+                      width="16" alt="icon" /></button>
+                  <button class="carousel-control-next position-static" type="button"
+                    data-bs-target="#testimonialIndicator" data-bs-slide="next"><img src="{% static 'landingpage/assets/img/icons/down.svg' %}"
+                      width="16" alt="icon" /></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- end of .container-->
+
+      <!-- </section>
+      <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- <div class="position-relative pt-9 pt-lg-8 pb-6 pb-lg-8">
+        <div class="container">
+          <div class="row row-cols-lg-5 row-cols-md-3 row-cols-2 flex-center">
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius:10px;">
+                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/1.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius:10px;">
+                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/2.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius:10px;">
+                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/3.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius:10px;">
+                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/4.png" alt="" /></div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card shadow-hover mb-4" style="border-radius:10px;">
+                <div class="card-body text-center"> <img class="img-fluid" src="assets/img/partner/5.png" alt="" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-6">
+
+        <div class="container">
+          <div class="py-8 px-5 position-relative text-center"
+            style="background-color: rgba(223, 215, 249, 0.199);border-radius: 129px 20px 20px 20px;">
+            <div class="position-absolute start-100 top-0 translate-middle ms-md-n3 ms-n4 mt-3"> <img
+                src="{% static 'landingpage/assets/img/cta/send.png' %}" style="max-width:70px;" alt="send icon" /></div>
+            <div class="position-absolute end-0 top-0 z-index--1"> <img src="{% static 'landingpage/assets/img/cta/shape-bg2.png' %}" width="264"
+                alt="cta shape" /></div>
+            <div class="position-absolute start-0 bottom-0 ms-3 z-index--1 d-none d-sm-block"> <img
+                src="{% static 'landingpage/assets/img/cta/shape-bg1.png' %}" style="max-width: 340px;" alt="cta shape" /></div>
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-md-10">
+                <h2 class="text-secondary lh-1-7 mb-7">Subscribe to get information, latest news and other interesting
+                  offers about Cobham</h2>
+                <form class="row g-3 align-items-center w-lg-75 mx-auto">
+                  <div class="col-sm">
+                    <div class="input-group-icon">
+                      <input class="form-control form-little-squirrel-control" type="email" placeholder="Enter email "
+                        aria-label="email" /><img class="input-box-icon" src="{% static 'landingpage/assets/img/cta/mail.svg' %}" width="17"
+                        alt="mail" />
+                    </div>
+                  </div>
+                  <div class="col-sm-auto">
+                    <button class="btn btn-danger orange-gradient-btn fs--1">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pb-0 pb-lg-4">
+
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-7 col-12 mb-4 mb-md-6 mb-lg-0 order-0"> <img class="mb-4"
+                src="{% static 'landingpage/assets/img/STUDY_ABROAD_CONSULTANTS__1_-removebg-preview.png' %}" width="150" alt="jadoo" />
+              <p class="fs--1 text-secondary mb-0 fw-medium">BETTER FUTURE STARTS HERE !</p>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-1 order-md-2">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Company</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'companyprofile' %}">Company Profile</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'service' %}">Service</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'contactus' %}">Help and Support</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'university' %}">University</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'contactus' %}">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-2 order-md-3">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Destinations</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'uk' %}">United Kingdom</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'usa' %}">United States</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'canada' %}">Canada</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'australia' %}">Australia</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'ireland' %}">Ireland</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'newzealand' %}">New-Zealand</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'germany' %}">Germany</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'france' %}">France</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'europe' %}">Europe</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'africa' %}">Africa</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'asia' %}">Asia</a></li>
+
+              </ul>
+            </div>
+            <div class="col-lg-2 col-md-4 mb-4 mb-lg-0 order-lg-3 order-md-4">
+              <h4 class="footer-heading-color fw-bold font-sans-serif mb-3 mb-lg-4">Test Preperation</h4>
+              <ul class="list-unstyled mb-0">
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'testprep_ielts' %}">IELTS</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'testprep_gre' %}">GRE</a></li>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'testprep_pte' %}">PTE</a>
+                <li class="mb-2"><a class="link-900 fs-1 fw-medium text-decoration-none" href="{% url 'testprep_toefl' %}">TOEFL</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-md-5 col-12 mb-4 mb-md-6 mb-lg-0 order-lg-4 order-md-1">
+              <div class="icon-group mb-4"> <a class="text-decoration-none icon-item shadow-social" id="facebook"
+                  href="https://www.facebook.com/FutureCounselors/"><i class="fab fa-facebook-f"> </i></a><a
+                  class="text-decoration-none icon-item shadow-social" id="instagram"
+                  href="https://www.instagram.com/Future.Counselor/"><i class="fab fa-instagram"> </i></a><a
+                  class="text-decoration-none icon-item shadow-social" id="twitter"
+                  href="https://twitter.com/FutureCounselo"><i class="fab fa-twitter"> </i></a></div>
+            </div>
+          </div>
+        </div><!-- end of .container-->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <div class="py-5 text-center">
+        <p class="mb-0 text-secondary fs--1 fw-medium">All rights Future Counselors, <a
+            href="http://www.futurecounselors.com/">www.futurecounselors.com </a></p>
+        <p class="mb-0 text-secondary fs--1 fw-medium">Designed & Developed by: <a href="https://nexel.in/">N E X E
+            L</a></p>
+
+      </div>
+  </main>
+  <!-- ===============================================-->
+  <!--    End of Main Content-->
+  <!-- ===============================================-->
+
+
+
+
+  <!-- ===============================================-->
+  <!--    JavaScripts-->
+  <!-- ===============================================-->
+  <script src="{% static 'landingpage/vendors/@popperjs/popper.min.js' %}"></script>
+  <script src="{% static 'landingpage/vendors/bootstrap/bootstrap.min.js' %}"></script>
+  <script src="{% static 'landingpage/vendors/is/is.min.js' %}"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=window.scroll' %}"></script>
+  <script src="{% static 'landingpage/vendors/fontawesome/all.min.js' %}"></script>
+  <script src="{% static 'landingpage/assets/js/theme.js' %}"></script>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Volkhov:wght@700&amp;display=swap"
+    rel="stylesheet">
+</body>
+
+</html>

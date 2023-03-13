@@ -1,0 +1,463 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block head %}
+<title>Study in Africa | Future Counselors</title>
+<meta name="description" content="Discover the top universities and study programs in Africa with Future Counselors. Our experienced counselors provide personalized guidance and support to help you achieve your academic and career goals.">
+<meta name="keywords" content="study in Africa, Africa universities, education overseas, Future Counselors, India">
+<link rel="canonical" href="https://www.futurecounselors.com/study-in-africa">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+ <section class="hero-wrap hero-wrap-2" style="background-image: url('https://i.ibb.co/9bD2zg1/road-way-spitzkoppe-mountains-spitzkoppe-is-group-bald-granite-peaks-located-swakopmund-namib-desert.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end justify-content-center">
+      <div class="col-md-9 ftco-animate pb-5 text-center">
+       <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Study AFRICA<i class="fa fa-chevron-right"></i></span></p>
+       <h1 class="mb-0 bread">Study In AFRICA</h1>
+     </div>
+   </div>
+ </div>
+</section>
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+background: #F9F9F9;
+padding: 25px;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#contact h3 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 10px;
+}
+
+#contact h4 {
+margin: 5px 0 15px;
+display: block;
+font-size: 13px;
+font-weight: 400;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+-webkit-transition: border-color 0.3s ease-in-out;
+-moz-transition: border-color 0.3s ease-in-out;
+transition: border-color 0.3s ease-in-out;
+border: 1px solid #aaa;
+}
+
+#contact textarea {
+height: 100px;
+max-width: 100%;
+resize: none;
+}
+
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #E449AD;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+border-radius: 20px;
+}
+
+#contact button[type="submit"]:hover {
+background: #bf2e8c;
+-webkit-transition: background 0.3s ease-in-out;
+-moz-transition: background 0.3s ease-in-out;
+transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+outline: 0;
+border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+color: #888;
+}
+
+:-moz-placeholder {
+color: #888;
+}
+
+::-moz-placeholder {
+color: #888;
+}
+
+:-ms-input-placeholder {
+color: #888;
+}
+</style>
+
+
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+  <div class="container" style="max-width: 1400px;">
+    <div class="row">
+      <div class="col-lg-8 ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Why Study in AFRICA ?</h2>
+        <p>Studying in Africa offers a multitude of unique benefits for international students. In addition to the reasons mentioned before, studying in Africa provides an opportunity for cultural immersion and learning, innovative academic programs, and networking opportunities. It also offers a chance to develop language skills and personal growth through adapting to a new environment.</p><br>
+        <p>Students can engage with local communities through community projects, providing a chance to make a positive impact. Overall, studying in Africa can offer a life-changing experience that can help students grow both personally and professionally, while also contributing to a brighter future for the continent and the world.</p>
+        <p style="display: flex; justify-content: center;">
+          <img src="https://img.freepik.com/free-photo/three-african-students-female-posed-with-backpacks-school-items-yard-university_627829-13637.jpg?w=1380&t=st=1676353532~exp=1676354132~hmac=8c4752536874fd8dfdd55803693d0704a4c6c6e0df64a260ae8fd947280f3a06" alt="" width=500 class="img-fluid">
+        </p>
+        
+
+    
+          <!-- END comment-list -->
+
+          
+        
+
+      </div> <!-- .col-md-8 -->
+
+
+
+      <div class="col-lg-4 ftco-animate py-md-5 mt-md-5">
+        <div class="container">  
+          {% include 'registerform.html' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- .section -->
+
+
+
+<h2 class="mt-3" style="font-size: 40px; font-weight: bold; display: flex; justify-content: center;" >Top Courses</h2>
+
+<div class="container">
+
+  <!--Grid row-->
+  <div class="row" style="text-align: center;">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-12 mb-4 font-weight-bold">
+    <img src="{% static 'images/icons/usa/7.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/usa/6.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/uk/uk_4.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/uk/uk_5.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+    
+  </div>
+  <!--Grid row-->
+
+</div>
+<div style="display: flex; justify-content: center;">
+<a href="#applicationform" type="submit" class=" popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+
+<section class="container" style="max-width: 1000px">
+  <style>
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+    }
+    
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .video-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      {% comment %} background-color: rgba(0, 0, 0, 0.4); {% endcomment %}
+    }
+    
+    .video-container .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .video-container .play-button.hidden {
+      display: none;
+    }
+    
+    .video-container .play-button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 40px;
+      border-color: transparent transparent transparent white;
+    }
+    
+    .video-container .play-button:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    
+    .video-container .text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .video-container:hover .play-button {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+    
+    .video-container:hover .text {
+      opacity: 1;
+    }
+    
+    
+  </style>
+  <div class="video-container">
+    <video src="{% static 'video/country/Africa.mp4' %}"  loop muted></video>
+    <div class="overlay"></div>
+    <div class="play-button"></div>
+  </div>
+  <script>
+
+    const video = document.querySelector('video');
+    const playButton = document.querySelector('.play-button');
+    
+    playButton.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        playButton.classList.add('paused');
+      } else {
+        video.pause();
+        playButton.classList.remove('paused');
+      }
+    });
+    
+    video.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        playButton.classList.add('paused');
+      } else {
+        video.pause();
+        playButton.classList.remove('paused');
+      }
+    });
+    
+    video.addEventListener('ended', function() {
+      playButton.classList.remove('paused');
+    });
+    
+    video.addEventListener('play', function() {
+      playButton.classList.add('hidden');
+    });
+    
+    video.addEventListener('pause', function() {
+      playButton.classList.remove('hidden');
+    });
+    
+
+  </script>
+</section>
+
+<div  id="applicationform">
+  <br>
+  <br>
+</div>
+<section class="intro mt-4" id="applicationform">
+  <div class="bg-image-vertical h-100">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="card-body p-5">
+
+                <h1 class="mb-5 text-center font-weight-bold">Hey, we’d like to know you better too!</h1>
+
+                {% include 'mainregistration.html' %}
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+      <div class="container ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Career Opportunities in AFRICA</h2>
+        <p>Africa is home to many rapidly growing economies, which are creating a range of career opportunities for professionals in various fields. Some of the most promising career sectors in Africa include business, finance, healthcare, technology, and renewable energy. The continent's natural resources and biodiversity also provide ample opportunities for careers in agriculture, mining, and environmental conservation. Moreover, the increasing focus on sustainable development and the green economy is creating new opportunities in fields such as renewable energy, sustainable tourism, and eco-friendly manufacturing.</p><br>
+        <p>With a growing middle class and a young and dynamic population, Africa is poised to become a major player in the global economy, providing numerous career opportunities for professionals who are willing to take on the challenges and opportunities of this dynamic and exciting continent.</p>
+      </div>
+      <div style="display: flex; justify-content: center;">
+<a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white;">Apply Now</a>
+</div>
+
+
+
+<br>
+<br>
+
+<section class="container" style="max-width: 800px">
+  <section class="image-section">
+    <div class="image-container">
+      <img src="{% static 'images/contry_flow/flow_africa.png' %}" alt="Your Image">
+    </div>
+  </section>
+  
+  <style>
+  .image-section {
+    position: relative;
+    height: 100vh;
+
+  }
+  
+  .image-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 40px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .image-section {
+      height: 50vh;
+    }
+  }
+  </style>
+  
+</section>
+<br>
+<br>
+
+
+
+            <div class="container ftco-animate mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Education Cost in AFRICA</h2>
+        <p>The cost of education in Africa varies widely depending on the country and the institution. In general, public universities and colleges tend to be more affordable than private institutions, and tuition fees may be lower in rural areas than in urban centers. Additionally, international students may pay higher tuition fees than local students.</p><br>
+        <p>According to a report by UNESCO, the average annual tuition fee for a bachelor's degree in Africa is around US $1,000, but fees can range from a few hundred dollars to over $7,000 per year. In some countries, such as South Africa and Egypt, tuition fees can be higher.</p><br>
+        <p>Overall, studying in Africa can offer an affordable option for students who are looking to pursue higher education abroad. However, it's important for students to research the costs associated with their specific institution and country of interest and to plan accordingly.</p>
+                <div style="display: flex; justify-content: center;">
+<a href="#applicationform" type="submit" class="popup-button" style="width: 150px;background-color: #727FE9; color: white;">Apply Now</a>
+</div>
+
+                      <div class="container ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >AFRICA Student VISA</h2>
+        <p>Obtaining a student visa in Africa can be a complex and time-consuming process. The specific requirements for the visa may vary depending on the country you plan to study in, so it's important to research the specific requirements for the country where you plan to study. In addition to the documents listed, you may also be required to provide proof of accommodation, travel plans, and a return ticket. It's crucial to apply for your student visa well in advance of your planned departure, as the process can take several weeks or even months.</p><br>
+        <p>Working closely with your chosen institution and seeking the advice of a qualified immigration lawyer can help ensure that your application is complete and increases your chances of a successful outcome. Keep in mind that the visa application process may be affected by political, economic, and social conditions in the country where you plan to study, so it's important to stay informed and flexible throughout the process.</P>
+      </div>
+      <div style="display: flex; justify-content: center;">
+<a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div><br><br>
+
+      </div> 
+
+
+{% include "footer.html" %}
+{% endblock body %}

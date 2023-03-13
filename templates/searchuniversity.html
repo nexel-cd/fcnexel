@@ -1,0 +1,142 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block head %}
+<title>Universities | Future Counselors</title>
+<meta name="description" content="Explore the top universities around the world with Future Counselors. Our comprehensive listings include information on academic programs, admission requirements, and campus life.">
+<meta name="keywords" content="universities, academic programs, admission requirements, campus life, Future Counselors, India">
+<link rel="canonical" href="https://www.futurecounselors.com/universities">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+
+
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('https://img.freepik.com/free-photo/free-time-students-bachelor-s-campus-life-rhythm-five-friendly-students-are-walking_8353-6408.jpg?w=1380&t=st=1676354668~exp=1676355268~hmac=a7652228f5f4fe65e19a5f15819d275c6641108e7523546283acdfe991469b49');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center">
+					<p class="breadcrumbs"><span class="mr-2"><a href="/">Home <i class="fa fa-chevron-right"></i></a></span> <span>Course Lists <i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">Course Lists</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 sidebar">
+					<div class="sidebar-box bg-white ftco-animate">
+						<form action="search" method="get" class="search-form">
+							<div class="form-group">
+								<span class="icon fa fa-search"></span>
+								<input type="text" name="query" id="query" class="form-control" placeholder="Search..." type="submit">
+                                {% comment %} <a type="submit" class="btn">Search</a> {% endcomment %}
+							</div>
+						</form>
+					</div>
+
+					<div class="sidebar-box bg-white p-4 ftco-animate">
+						<h3 class="heading-sidebar">Course Category</h3>
+						<form action="#" class="browse-form">
+							<label for="option-category-1"><a type="submit" href="search?query=pg" id="option-category-1" name="vehicle" value="" checked> Post Graduate</a></label><br>
+							<label for="option-category-2"><a type="submit" href="search?query=ug" name="vehicle" value=""> Under Graduate</a></label><br>
+						</form>
+					</div>
+
+					<div class="sidebar-box bg-white p-4 ftco-animate">
+						<h3 class="heading-sidebar">Choose your Destination</h3>
+						<form action="#" class="browse-form">
+							<label for="option-instructor-1"><a type="submit" href="search?query=usa" id="option-instructor-1" name="vehicle" value="" checked> USA</a></label><br>
+							<label for="option-instructor-2"><a type="submit" href="search?query=portugal"  id="option-instructor-2" name="vehicle" value=""> Portugal</a></label><br>
+							<label for="option-instructor-3"><a type="submit" href="search?query=netherland"  id="option-instructor-3" name="vehicle" value=""> Netherland</a></label><br>
+							<label for="option-instructor-4"><a type="submit" href="search?query=uk"  id="option-instructor-4" name="vehicle" value=""> UK</a></label><br>
+							<label for="option-instructor-5"><a type="submit" href="search?query=Hungary"  id="option-instructor-5" name="vehicle" value=""> Hungary</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Finland"  id="option-instructor-6" name="vehicle" value=""> Finland</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Canada"  id="option-instructor-6" name="vehicle" value=""> Canada</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Spain"  id="option-instructor-6" name="vehicle" value=""> Spain</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=France"  id="option-instructor-6" name="vehicle" value=""> France</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Switzerland"  id="option-instructor-6" name="vehicle" value=""> Switzerland</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Germany"  id="option-instructor-6" name="vehicle" value=""> Germany</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Greece"  id="option-instructor-6" name="vehicle" value=""> Greece</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=newZealand"  id="option-instructor-6" name="vehicle" value=""> New Zealand</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Poland"  id="option-instructor-6" name="vehicle" value=""> Poland</a></label><br>
+							<label for="option-instructor-6"><a type="submit" href="search?query=Australia"  id="option-instructor-6" name="vehicle" value=""> Australia</a></label><br>
+
+							
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-9">
+					<div class="row">
+						
+						
+						
+
+						
+						{% for university in university %}
+						<div class="col-md-6 d-flex align-items-stretch ftco-animate">
+							<div class="project-wrap">
+								<a class="img" style="background-image: url({{university.collegeimage.url}});">
+									<span class="price">{{university.duraction}} Year</span>
+								</a>
+								<div class="text p-4">
+									<h3><a>{{university.name}} </a></h3>
+									<p class="advisor">Course : {{university.Course}} <br>Level of Study : {{university.los}} <br> State : {{university.state}} <br>Country : {{university.country}}</p>
+									<ul class="d-flex justify-content-between">
+										<li><a href="{% url 'contactus'  %}">Talk to Experts</a></li>
+										<li><a onclick="openRegistrationPopup()">Register Now</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+                        {% empty %}
+                            <div class="section-tittle text-center mb-80">
+                                <h5>No Result Found​</h5>
+                            </div>
+                        {% endfor %}
+
+
+					</div>
+
+					<script>
+						function openRegistrationPopup() {
+							var url = "{% url 'register' %}";
+							var width = 600;
+							var height = 550;
+							var left = (window.innerWidth - width) / 2;
+							var top = (window.innerHeight - height) / 2;
+							var options = 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top;
+							window.open(url, 'Registration', options);
+						}
+						</script>
+
+
+					<div class="row mt-5">
+						<div class="col">
+							<div class="block-27">
+								<ul>
+                                    {% if university.has_previous %}
+									<li><a href="?page={{ university.previous_page_number }}">&lt;</a></li>
+                                    {% endif %}
+									<li class="active"><span>{{ university.number }}</span></li>
+                                    {% if university.has_next %}
+									<li><a href="?page={{ university.next_page_number }}">&gt;</a></li>
+                                    {% endif %}
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+        {% include "footer.html" %}
+        {% endblock body %}

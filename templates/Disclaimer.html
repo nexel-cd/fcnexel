@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+	
+	<section class="hero-wrap hero-wrap-2" style="background-image: url('{% static 'images/bg_2.jpg' %}');">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-end justify-content-center">
+				<div class="col-md-9 ftco-animate pb-5 text-center">
+					<p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Disclaimer<i class="fa fa-chevron-right"></i></span></p>
+					<h1 class="mb-0 bread">Disclaimer</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section bg-light">
+		<div class="container">
+			<div class="row">
+				<h1 style="font-weight: 600;">Disclaimer</h1><hr><br>
+						<p style="justify-content: center; font-weight: 3300;"> The contents of this website are the property of Future Counselor's and are protected under the copyright law of India. Reproduction or duplication of the information provided on our website is strictly prohibited. We do not endorse any advertisers on our web pages and suggest verifying the authenticity of all information before relying on it. The linked sites are not under our control and we are not responsible for their contents, changes or updates. They are provided as a convenience only and the inclusion of any link does not imply endorsement by us. Users are responsible for examining the copyright and licensing restrictions of linked pages and securing necessary permissions. For security purposes, we use software programs to monitor traffic and identify unauthorized attempts to upload or change information or cause damage. If you do not agree with our disclaimers, please do not access the material on our pages</p>
+					</div>
+	</section>
+
+	{% include "footer.html" %}
+	{% endblock body %}

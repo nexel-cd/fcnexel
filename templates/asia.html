@@ -1,0 +1,463 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block head %}
+<title>Study in Asia | Future Counselors</title>
+<meta name="description" content="Explore the top universities and study programs in Asia with Future Counselors. Our experienced counselors provide personalized guidance and support to help you achieve your academic and career goals.">
+<meta name="keywords" content="study in Asia, Asia universities, education overseas, Future Counselors, India">
+<link rel="canonical" href="https://www.futurecounselors.com/study-in-asia">
+<meta name="robots" content="index,follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% endblock head %}
+
+{% block body %}
+{% include "navbar.html" %}
+
+ <section class="hero-wrap hero-wrap-2" style="background-image: url('https://i.ibb.co/gPjJh66/scenery-from-victoria-peak-hong-kong-china.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text align-items-end justify-content-center">
+      <div class="col-md-9 ftco-animate pb-5 text-center">
+       <p class="breadcrumbs"><span class="mr-2"><a href="{% url 'homepage' %}">Home <i class="fa fa-chevron-right"></i></a></span> <span>Study ASIA<i class="fa fa-chevron-right"></i></span></p>
+       <h1 class="mb-0 bread">Study In ASIA</h1>
+     </div>
+   </div>
+ </div>
+</section>
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+background: #F9F9F9;
+padding: 25px;
+box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+#contact h3 {
+display: block;
+font-size: 30px;
+font-weight: 300;
+margin-bottom: 10px;
+}
+
+#contact h4 {
+margin: 5px 0 15px;
+display: block;
+font-size: 13px;
+font-weight: 400;
+}
+
+fieldset {
+border: medium none !important;
+margin: 0 0 10px;
+min-width: 100%;
+padding: 0;
+width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+width: 100%;
+border: 1px solid #ccc;
+background: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+-webkit-transition: border-color 0.3s ease-in-out;
+-moz-transition: border-color 0.3s ease-in-out;
+transition: border-color 0.3s ease-in-out;
+border: 1px solid #aaa;
+}
+
+#contact textarea {
+height: 100px;
+max-width: 100%;
+resize: none;
+}
+
+#contact button[type="submit"] {
+cursor: pointer;
+width: 100%;
+border: none;
+background: #E449AD;
+color: #FFF;
+margin: 0 0 5px;
+padding: 10px;
+font-size: 15px;
+border-radius: 20px;
+}
+
+#contact button[type="submit"]:hover {
+background: #bf2e8c;
+-webkit-transition: background 0.3s ease-in-out;
+-moz-transition: background 0.3s ease-in-out;
+transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+outline: 0;
+border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+color: #888;
+}
+
+:-moz-placeholder {
+color: #888;
+}
+
+::-moz-placeholder {
+color: #888;
+}
+
+:-ms-input-placeholder {
+color: #888;
+}
+</style>
+
+
+<section class="ftco-section ftco-no-pt ftco-no-pb">
+  <div class="container" style="max-width: 1400px;">
+    <div class="row">
+      <div class="col-lg-8 ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Why Study in ASIA ?</h2>
+        <p>Studying in Asia also offers the opportunity to learn about ancient cultures and civilizations, as many Asian countries have a rich history and heritage. In addition, Asia is known for its innovative and cutting-edge technologies, providing students with access to some of the latest advancements in fields such as robotics and artificial intelligence.</p><br>
+        <p>Furthermore, many Asian countries offer a vibrant and exciting social life, with bustling cities and a wide range of cultural activities to explore. Finally, studying in Asia can help students develop important skills such as adaptability, cross-cultural communication, and resilience, which are highly valued by employers in today's globalized world.</p>
+        <p style="display: flex; justify-content: center;">
+          <img src="https://img.freepik.com/free-photo/indian-student-man-holding-pile-books-sitting-near-fountain-street_231208-2778.jpg?w=1380&t=st=1676352686~exp=1676353286~hmac=ee9e2190f5389b7a1ce89febef8e51cb769ff4c70dd66395e170c1fdef08ee6e" alt="" width=500 class="img-fluid">
+        </p>
+        
+
+    
+          <!-- END comment-list -->
+
+          
+        
+
+      </div> <!-- .col-md-8 -->
+
+
+
+      <div class="col-lg-4 ftco-animate py-md-5 mt-md-5">
+        <div class="container">  
+          {% include 'registerform.html' %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section> <!-- .section -->
+
+
+
+<h2 class="mt-3" style="font-size: 40px; font-weight: bold; display: flex; justify-content: center;" >Top Courses</h2>
+
+<div class="container">
+
+  <!--Grid row-->
+  <div class="row" style="text-align: center;">
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-12 mb-4 font-weight-bold">
+    <img src="{% static 'images/icons/usa/7.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/usa/6.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/uk/uk_4.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+
+    <!--Grid column-->
+    <div class="col-lg-3 col-md-6 mb-4">
+    <img src="{% static 'images/icons/uk/uk_5.png' %}" alt="" height="250px"><br>
+    </div>
+    <!--Grid column-->
+    
+  </div>
+  <!--Grid row-->
+
+</div>
+<div style="display: flex; justify-content: center;">
+  <a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+</div>
+
+<br>
+<br>
+<section class="container" style="max-width: 1000px">
+  <style>
+    
+    .video-container {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%; /* 16:9 aspect ratio */
+      overflow: hidden;
+    }
+    
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .video-container .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      {% comment %} background-color: rgba(0, 0, 0, 0.4); {% endcomment %}
+    }
+    
+    .video-container .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80px;
+      height: 80px;
+      background-color: rgba(0, 0, 0, 0.4);
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+    .video-container .play-button.hidden {
+      display: none;
+    }
+    
+    .video-container .play-button::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 20px 0 20px 40px;
+      border-color: transparent transparent transparent white;
+    }
+    
+    .video-container .play-button:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    
+    .video-container .text {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    .video-container:hover .play-button {
+      transform: translate(-50%, -50%) scale(1.5);
+    }
+    
+    .video-container:hover .text {
+      opacity: 1;
+    }
+    
+    
+  </style>
+  <div class="video-container">
+    <video src="{% static 'video/country/asia.mp4' %}"  loop muted></video>
+    <div class="overlay"></div>
+    <div class="play-button"></div>
+  </div>
+  <script>
+
+    const video = document.querySelector('video');
+    const playButton = document.querySelector('.play-button');
+    
+    playButton.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        playButton.classList.add('paused');
+      } else {
+        video.pause();
+        playButton.classList.remove('paused');
+      }
+    });
+    
+    video.addEventListener('click', function() {
+      if (video.paused) {
+        video.play();
+        playButton.classList.add('paused');
+      } else {
+        video.pause();
+        playButton.classList.remove('paused');
+      }
+    });
+    
+    video.addEventListener('ended', function() {
+      playButton.classList.remove('paused');
+    });
+    
+    video.addEventListener('play', function() {
+      playButton.classList.add('hidden');
+    });
+    
+    video.addEventListener('pause', function() {
+      playButton.classList.remove('hidden');
+    });
+    
+
+  </script>
+</section>
+
+<div  id="applicationform">
+  <br>
+  <br>
+</div>
+<section class="intro mt-4">
+  <div class="bg-image-vertical h-100">
+    <div class="mask d-flex align-items-center h-100">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10">
+            <div class="card" style="border-radius: 1rem;">
+              <div class="card-body p-5">
+
+                <h1 class="mb-5 text-center font-weight-bold">Hey, we’d like to know you better too!</h1>
+
+                {% include 'mainregistration.html' %}
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+      <div class="container ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Career Opportunities in ASIA</h2>
+        <p>Asia's rapidly developing economy and innovative business landscape offer many career opportunities for both domestic and international graduates. In addition to the industries mentioned, Asia is also a major player in manufacturing, international trade, and renewable energy, among others.</p><br>
+        <p>With its unique blend of ancient traditions and modern innovation, Asia is an exciting place to explore and build a career. Furthermore, Asia's diverse culture and multilingual environment can provide graduates with valuable cross-cultural communication skills and a global perspective that can be valuable in any career.</p>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+      </div>
+
+
+      
+<br>
+<br>
+
+<section class="container" style="max-width: 800px">
+  <section class="image-section">
+    <div class="image-container">
+      <img src="{% static 'images/contry_flow/flow_asia.png' %}" alt="Your Image">
+    </div>
+  </section>
+  
+  <style>
+  .image-section {
+    position: relative;
+    height: 100vh;
+
+  }
+  
+  .image-container {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 40px;
+  }
+  
+
+  @media (max-width: 768px) {
+    .image-section {
+      height: 50vh;
+    }
+  }
+  </style>
+  
+</section>
+<br>
+<br>
+
+            <div class="container ftco-animate mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >Education Cost in ASIA</h2>
+        <p>The cost of education in Asia varies depending on the country and the specific institution. Some Asian countries offer affordable tuition fees compared to universities in the United States and Europe. However, it's important to note that tuition fees are just one of the many expenses to consider when studying abroad, as there are also living expenses, including accommodation, food, and transportation.</p><br>
+        <p>For example, in China, tuition fees for undergraduate programs can range from approximately 8,000 to 15,000 RMB per year (roughly $1,200 to $2,300 USD), while postgraduate programs can range from approximately 15,000 to 30,000 RMB per year (roughly $2,300 to $4,600 USD). In India, tuition fees can range from approximately 25,000 to 200,000 INR per year (roughly $340 to $2,700 USD), depending on the program and institution.</p><br>
+        <p>It's important to research the specific costs of studying in the country and institution you are interested in, as well as to consider scholarship opportunities and other financial aid options.</p>
+                <div style="display: flex; justify-content: center;">
+                  <a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+                </div>
+
+                      <div class="container ftco-animate py-md-5 mt-md-5">
+        <h2 class="mb-3" style="font-size: 40px; font-weight: bold;" >ASIA Student VISA</h2>
+        <p>Obtaining a student visa in Asia generally requires providing the necessary documents, such as an acceptance letter from a university, proof of financial resources, health insurance, passport, language proficiency, and other documents. The visa application process can vary depending on the country, and it's crucial to apply well in advance of your planned departure, as the process can take time.</p><br>
+        <p> It's also recommended to research the specific visa requirements of the country where you plan to study and to work closely with your chosen institution to ensure that you have all the necessary information and documents. In some cases, additional requirements such as a medical examination or a police clearance certificate may also be necessary.</P>
+      </div>
+      <div style="display: flex; justify-content: center;">
+        <a href="#applicationform" type="submit" class="popup-button" style="width: 150px; background-color: #727FE9; color: white; ">Apply Now</a>
+      </div><br><br>
+
+      </div> 
+
+
+{% include "footer.html" %}
+{% endblock body %}
